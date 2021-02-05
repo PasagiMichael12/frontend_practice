@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Math</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="firstNumber" name="name" min="0" required> <br>
+        <input type="number" id="secondNumber"required min="0"> <br>
+
+        <select name="operator" id="operator">
+            <option value="op" selected>Operator</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+        </select>
+        <br>
+        <p id='answer'></p>
+        <br>
+        <button onclick="Compute()" type="button">Compute</button>
+        <button onclick="reload()">reset</button>
+        <button onclick="window.print()">Print page</button>
+        
+    </form>
+
+
+    
+    <hr>
+    <br>
+    <p id = "date"></p>
+    <p id = "timeformat"></p>
+    <button onclick="getDate()">Display Time</button>
+    <button onclick="timeFormat()">Display time</button>
+
+
+<script src="index.js"></script>
+</body>
+</html>
