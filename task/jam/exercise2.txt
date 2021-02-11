@@ -1,2 +1,77 @@
 Write a function arraySum that accepts a numerically indexed array and returns the sum of the elements. For example,
 // var = arraySum([1, 2, 3, 4, 5]); // output 15
+
+
+const arrays0 = [1, 2, 3, 4];
+let sums5 = 0;
+for(let x = 0; x < arrays0.length; x++){
+    sums5 += arrays0[x];
+}
+
+
+Data Types
+
+1. String 
+    'Jam', "Nicole"
+
+    let name = 'Jam'
+    
+    typeof name
+    "string"
+
+2. Number 
+    let x = 1;
+    let y = 0.5;
+    let z = -5
+
+    typeof x
+    "number"
+    typeof y
+    "number"
+    typeof z
+    "number"
+
+3. Object
+    const object = {
+        name: "Jamol",
+        age: 21,
+        gender: 'F'
+    }
+
+    object.name
+    "Jamol"
+    object.age
+    21
+    object.gender
+    "F"
+
+4. Null 
+    
+    let a = null;
+
+    console.log(x)
+    null
+
+5. Array
+    const arr = [1, 'a', 0.5, "b"];
+
+    for(let x = 0; x < arr.length; x++){
+    console.log(arr[x]);
+    }
+
+    1
+    a
+    0.5
+    b
+
+6. Boolean
+    true/false
+
+    let x = 9;
+    Boolean(x < 5)
+    false
+    Boolean(x < 10)
+    true
+
+7. Undefined
+    value not yet assigned
