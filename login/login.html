@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/lib/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+
+    .vheight{
+        height: 100vh;
+    }
+    .login input{
+        border-radius: 0px !important;
+        background: #e9ecef !important;
+        border: 0px !important;
+        padding: 0.575rem !important;
+    }
+    .login-icon {
+        border-radius: 0px !important;
+        background: #e9ecef !important;
+        border: 0px !important;
+    }
+    .btn-login {
+        background: crimson !important;
+        color: #fff !important;
+        border-radius: 0px !important;
+        
+    }
+    .icon-cont img {
+        width: 40px;
+    }
+    .title-log{
+        font-size: 1.25rem;;
+    }
+
+    .text-red{
+        color:red !important;
+    }
+    .text-blue {
+        color: darkblue !important;
+    }
+    .text-bold {
+        font-weight: 900 !important;
+    }
+    .rem-text {
+        font-size: 0.725rem !important; 
+    }
+
+    .form-check-input {
+    margin-top: .2rem !important;
+}
+    </style>
+</head>
+<body style="background-color:darkblue;">
+    
+    <div class="container">
+        <div class="row flex d-flex justify-content-center align-items-center vheight" >
+            <div class="card" style=" width:21rem !important; border-radius: 0px !important;">
+            
+                <div class="card-body">
+                    <div class="logo-cont text-center ">
+                        <h1 class="text-bold title-log" style="font-family: 'Fredoka One', cursive;"><span class="text-red">RSL</span> <span class="text-blue">Group Of Companies</span> </h1>
+                        <div class="icon-cont d-flex justify-content-center">
+                            <img src="assets/img/pis1.png" alt="">
+                            <img src="assets/img/pescorp.png" alt="">
+                            <img src="assets/img/krl.png" alt="">
+                            <img src="assets/img/rsl2.png" alt="">
+                            <img src="assets/img/logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group login my-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text login-icon"><i class="far fa-envelope"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                              </div>
+                        </div>
+                        <div class="form-group login my-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text login-icon"><i class="fas fa-lock"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="rem">
+                          <label class="form-check-label text-muted rem-text" for="rem">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-login my-3 col-12 py-2">login</button>
+                      </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
