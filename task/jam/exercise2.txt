@@ -1,0 +1,2 @@
+Write a function arraySum that accepts a numerically indexed array and returns the sum of the elements. For example,
+// var = arraySum([1, 2, 3, 4, 5]); // output 15
