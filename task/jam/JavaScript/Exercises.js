@@ -1,3 +1,28 @@
+//half pyramid
+const numPyramid = (rows) => {
+    let result = '';
+    for (let x = 1; x <= rows; x++){
+      for (let y = 1; y <= x; y++){
+      result += y + ' ';
+      }
+     console.log(result)
+     result = '';
+     }  
+   }
+
+//closest to 100
+const compare = (num1, num2) => {
+    if (((num1 || num2) > 100) || ((num1 || num2) < 1)){
+         console.log('You entered an invalid number. Please try again.');
+    } else {
+        if (num1 > num2){
+            console.log(`${num1} is the number closest to 100.`);
+        } else {
+            console.log(`${num2} is the number closest to 100.`);
+        }
+    }
+}
+
 //a function that calculates the sum of all array inputs
 
 const arraySum = (a) => {
@@ -15,6 +40,16 @@ console.log(arraySum([1,2,3,4,5]));
 let block scope
 var global scope
 const constant
+Write a function arraySum that accepts a numerically indexed array and returns the sum of the elements. For example,
+// var = arraySum([1, 2, 3, 4, 5]); // output 15
+
+let arraySum = (a) => {
+    let sum = 0;
+    for(let z = 0; z < a.length; z++){
+        sum += a[z];
+    }
+    return sum;
+}
 
 
 //function that checks the occurence of the 2nd number within the 1st parameter (array)

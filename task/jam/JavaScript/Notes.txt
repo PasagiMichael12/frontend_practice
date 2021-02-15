@@ -1,18 +1,8 @@
-Write a function arraySum that accepts a numerically indexed array and returns the sum of the elements. For example,
-// var = arraySum([1, 2, 3, 4, 5]); // output 15
+Variables
 
-let arraySum = (a) => {
-    let sum = 0;
-    for(let z = 0; z < a.length; z++){
-        sum += a[z];
-    }
-    return sum;
-}
-
-
-let block scope
-var global scope
-const constant
+let - block scope
+var - global scope
+const - constant
 
 
 Data Types
