@@ -28,7 +28,7 @@ const numOccurence = (a, b) => {
     return val;
 }
 
-console.log(numOccurence([1,2,2,2,3,3,5,6], 3));
+numOccurence([1,2,2,2,3,3,5,6], 3);
 
 
 //function that checks the 2nd highest number from the array
@@ -46,6 +46,22 @@ const highestNum = (a) => {
 
 console.log(highestNum([1, 10, 30, 45]));
 
+//print array values depending if array[0] is odd/even
 
+const arrList = (arr) => {
+    if(arr[0] % 2 == 0){
+        for(let x = 0; x < arr.length; x++){
+            if(arr[x] % 2 == 0){
+                console.log(arr[x]);
+            }
+        }
+    } else {
+        for(let x = 0; x < arr.length; x++){
+            if(arr[x] % 2 != 0){
+                console.log(arr[x]);
+            }
+        }
+    }
+}
 
-
+arrList([1,2,3,4,5]);
