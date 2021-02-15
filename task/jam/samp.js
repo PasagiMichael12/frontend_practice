@@ -17,8 +17,8 @@ var global scope
 const constant
 
 
-//a function that checks the instance of the 2nd number within the 1st parameter (array)
-const numContent = (a, b) => {
+//function that checks the occurence of the 2nd number within the 1st parameter (array)
+const numOccurence = (a, b) => {
     let val = 0;
     for(let x = 0; x < a.length; x++){
         if(a[x] == b){
@@ -28,4 +28,24 @@ const numContent = (a, b) => {
     return val;
 }
 
-console.log(numContent([42,65,84,83,45,31,10,69,69,70,71,84,84,85], 84));
+console.log(numOccurence([1,2,2,2,3,3,5,6], 3));
+
+
+//function that checks the 2nd highest number from the array
+const highestNum = (a) => {
+    let highest = Math.max(...a);
+    let numIndx = a.indexOf(highest);
+    let newArr = a.splice(numIndx, 1);
+    for(let x = 1; x <= newArr.length; x++){
+        let b = a[x+1]
+        if(a[x] < b){
+            return b;
+        }
+    }  
+}
+
+console.log(highestNum([1, 10, 75, 100]));
+
+
+
+
