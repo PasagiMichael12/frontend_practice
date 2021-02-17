@@ -1,0 +1,35 @@
+9:00 am
+
+//=========Javascript===========//
+
+Javascript can do
+
+	using document.getElementById('id of tag');
+	can change innerHTML = "";
+	can use single or double qoutes
+	can use to change img using 
+	   -document.getElementById('').src="path or file)";
+	can change html styles or css
+	   -document.getElementById('').style.css="";
+	can change if need to display or not
+	   -document.getElementById('').style.display="block or none";
+
+innerHTML use to change element of html
+document.write() use for html output->use only for Testing..
+window.alert() for alert box
+clg in vscode or consloe.log() use to display output thru browser console
+window.print()->prints the page
+
+make it your code readable
+% - remainder
+** exponentation
+** = ECMASCRIPT 
+
+assesment of simple calcu
+- with sir michael, frank, daniel.
+
+
+All Goods! 
+
+
+

@@ -1,0 +1,20 @@
+9:00am
+
+//============JAVASCRIPT=========//
+
+Data Types / primitive types
+->String = "" / ''
+->Number = int, const, float, double
+->Boolean = true or false ? 1 : 0
+->Undefined = undefined in console
+->null = null
+->Objects
+
+3 categories
+->composite = stores different data types
+->primitive = ^
+->special data types = undefined, null
+
+DOM = whole html
+
+Meeting with sir Michael

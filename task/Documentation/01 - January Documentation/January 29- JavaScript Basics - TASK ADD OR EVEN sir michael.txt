@@ -1,0 +1,6 @@
+nag aaccept ng integer *
+error if not integer or isNaN *
+get first number *
+check if odd or even first number *
+get all numbers depending on the first number odd or even *
+after submit display the values*

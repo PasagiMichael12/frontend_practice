@@ -1,0 +1,66 @@
+9:00 am
+
+
+//===========JAVASCRIPT OOP============//
+->practice no parameters
+
+->Encapsulation
+f() -> methods
+x -> property
+
+object: function()
+{ return $this.}
+
+->Abstraction
+simpler interface
+Reduce the impact of change
+
+->Inheritance
+Eliminate redundant code
+
+->polymorphism
+many and form
+
+benefits of OOP
+//Encapsulation = reduce complexity + reusability
+//Abstraction = Reduce complexity + isolate impact of changes
+//inheritance = eliminate redundant code
+//Polymorphism = refactior ugly switch/case statements 
+
+
+
+
+OOP -> Objects
+fundamental of objects
+
+//object literals
+collection of key value pairs
+example:
+const circle =  {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1,
+    },
+    draw: function()
+    {
+        console.log(return );
+    }
+};
+
+circle.draw();
+
+better way of creating in function
+function createCircle(radius)
+{
+    return {
+        radius,
+        draw: function() {
+            console.log('draw');
+        }
+    };
+}
+
+this<- reference object
+
+

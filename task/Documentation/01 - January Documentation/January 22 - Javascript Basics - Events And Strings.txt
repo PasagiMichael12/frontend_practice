@@ -1,0 +1,39 @@
+9:00 am
+
+//===========JAVASCRIPT============//
+
+//Events	
+onclick->use to interact in the html page
+onchange->changing the html element
+
+//Strings
+-- getting the length in javascript
+-> .length
+example:
+let name ="Allon";
+let numOfStrings = name.length; 
+
+//Escape Chars
+-- having quotes in a string
+uses:
+\' , \" , \\ , \
+
+//returning String vs Object
+let x = "Allon" <-- x is string
+let y = new String("Allon")<-- y is an Object
+
+// == vs ===
+let x = "Allon" 
+let y = new String("Allon")
+( x == y ) <== is true x and y have same value
+" == " = just looking for value inside, not the its typeof
+( x === y ) <== is false diff in types
+(String and objects)
+
+let x = new String("Allon")
+let y = new String("Allon")
+
+( x == y ) = false, x and y are diff objects
+( x === y ) = false, compaing two javascript objects will always return false
+
+ 

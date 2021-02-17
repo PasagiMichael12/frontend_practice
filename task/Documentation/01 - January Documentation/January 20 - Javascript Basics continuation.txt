@@ -1,0 +1,38 @@
+9:00 am
+//=========Javascript=========//
+
+//Behavior and validations 
+//Explore Javascript further
+
+
+var = global scope 
+ES6 = ecmascript-> let , const
+let = re-assign values;
+
+//installed js es6 code snippets for 
+shortcuts
+
+creating basic calculator using javascript
+for html
+
+! + tab = shortcut for DOCTYPE <html></html>
+
+Add form tag to the body, 
+two inputs that are defined as firstNumber and secondNumber in the id,
+select tag named operator same as in id
+p tag for revealing the answer
+and two buttons name Compute and Reset
+
+for initiating js
+create function method called Compute and reload
+in compute method
+the variables are firstNumber, secondNumber,operator,messag.
+i get their values using there id 
+and set result as 0
+
+i declared first and second variable also by using parseint to convert the values to integer
+
+and using switch case to do the functions
+
+for the validation, checking if the textboxes are set or have a values inside 
+if not, the alert function will call same as the if statement with operator variable inside.

@@ -1,0 +1,23 @@
+9:00 am
+
+
+//==========JAVASCRIPT OOP=========//
+-constructor
+const Circle = () => {
+	this.radius = radius;
+	this.draw = () => clg('draw')
+}
+Circle.call(firstparams,1)
+Circle.call({},1) specify the target "this"
+circle.apply({},[1,2,3]) used for arrays
+
+value types / primitives
+number, string, boolean, Symbol, undefined, null // primitive
+
+reference types 
+objects
+Functions
+array
+
+if object has special chars use bracket notation
+

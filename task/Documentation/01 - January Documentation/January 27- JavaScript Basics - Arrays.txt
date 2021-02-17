@@ -1,0 +1,39 @@
+9:00 am 
+
+
+
+//========JAVASCRIPT=======//
+
+Array 
+let array_name = [];
+let objects = {};
+
+accessing arrays thru indexes
+name[0],name[1]
+
+changing element
+let names = ['John','Dan','Berm'];
+names[0] = "lenovo"; <- changing index 0's value
+
+//object <-- need to learn
+let person = {firstName:"John",lastName: 	"Doe", age: 46};
+
+Adding Array Elements
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");
+
+TypeOf = to know what type of data;
+either array or objects
+
+Array Methods
+toString() 
+Pop = shift and push
+pop() <- removing last element
+push() <- adding element at the end
+shift() <- Removes first element
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");   //  the value of x is 5
+
+Splice()
+to remove elements without leaving "holes" in the array:

@@ -1,0 +1,31 @@
+9:00 am 
+
+
+//=====JAVASCRIPT OOP=====//
+--getting the key inside the objects
+return both properties and methods using bracket notation
+enumarate all the members of an object use for in loop
+for(let key in circle)
+{
+	clg[key , circle[key];
+}
+--getting only the properties and not method
+for(let key in circle)
+{
+	if(typeof circle[key] !== 'function')
+	clg[key , circle[key];
+}
+--getting all keys as an array from the objects
+Object -> pre-defined method
+Object.keys(circle); <---
+
+--checking if existing property or method use "in"
+if('radius' in circle)
+	console.log('circle has a radius');
+
+//--ABSTRACTION is
+hiding the details and show only the essentials
+Object.defineProperty(this,'defaulLocation', get: function() {
+	return defaultLocation;
+})
+

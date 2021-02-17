@@ -1,0 +1,47 @@
+1:26 pm 
+
+//========JAVASCRIPT==========//
+
+Javascript = programming language
+
+ECMASCRIPT / ES6 2015
+specification
+
+console.log('');
+//for printing / output display
+
+ctrl + shift+ i for inspect ->console
+
+//installing vscode
+//installing node.js 15.6.0 
+->extension->prettier
+
+//includes using src->source + ="PATH"
+
+let or var //let  
+const for constant
+
+2 Categories
+-Primitive / Value Types
+	-String
+	-Number
+	-Boolean
+	-undefined
+	-null  
+-Reference Types
+-objects
+-arrays
+-functions
+
+Dot Notation
+-access a property using .
+Bracket Notation
+['property']
+
+can access arrays using dot notation
+or bracket notation when using index or keys
+
+function(inputs as params)
+
+All Goods!
+

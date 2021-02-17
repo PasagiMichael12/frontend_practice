@@ -1,0 +1,38 @@
+git init --bare
+git clone repo.git (name of repo)
+clone repo
+
+!important -> git status local check
+
+branch -> module in commit / new history 
+separte history .. 
+update ->git pull 
+master-> master branch -> remote repo
+git pull ../repo.git master
+client and remote
+
+untracked files -> alien
+git add <file> or .
+
+git commit -m "message" <- meaningful 
+setting identity
+//
+git config user.name mentor
+git config user.name email
+
+origin -> URL
+git push origin master -> default -> linking
+git
+
+git fetch -> checking if new in server
+
+git add . -> specify files that u want to commit <-eto muna before commit always
+git commit -m "message" 
+
+if same line ERROR CONFLICT
+
+Repeated function
+
+git checkout -b (name) // creating new branch
+git push -u origin master -> for github appearance
+git push -u origin (branch name)
