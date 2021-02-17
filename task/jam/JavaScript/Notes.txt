@@ -71,3 +71,6 @@ Data Types
 
 7. Undefined
     value not yet assigned
+
+
+Array - data structure that we use to represent a list of items
