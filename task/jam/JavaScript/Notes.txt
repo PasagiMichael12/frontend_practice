@@ -77,6 +77,6 @@ Array - data structure that we use to represent a list of items
 pop() -remove last array element
 splice() - remove specific array element by index
 push() - add array element on last
-shift() - add array element at the beginning of an array
-unshift() - remove array element at the beginning
+unshift() - add array element at the beginning of an array
+shift() - remove array element at the beginning
 foreach() - go through each element of an array
