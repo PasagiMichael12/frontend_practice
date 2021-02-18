@@ -129,3 +129,26 @@ const helloWorld = () => {
 }
 
 console.log(helloWorld());
+
+
+//Write a function repeated that accepts three arguments (a function f, an integer n, and another integer x). The function should apply f to x n times. For examples:
+//repeated(addOne, 2, 3); //5
+    
+
+const addOne = (a) =>{
+    let newValue = a + 1;
+    return newValue;
+}
+
+const repeated = (f,n,x) =>{
+    let addFunc = f(x);
+    let arrVal = [addFunc];
+    for(let x = 0; x < n; x++){
+        let num = f(arrVal[x]);
+        arrVal.push(num);
+    }
+    //console.log(arrVal);
+    console.log(arrVal[n - 1]);
+}
+
+repeated(addOne, 2, 3);
