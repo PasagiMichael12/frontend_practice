@@ -19,15 +19,16 @@ const a = () => {
 }
 a()
 
-// const addOne = (value) => value + 1;
-// let result = 0;
-// const repeater = (f,times,value) => {
-//     //for (let i = 0; i < times; i++) { // i = 0 -> result = 4 -> i = 1 -> result = 5 -> i = 2
-//         result = f(f(f(f(value))));
-//     //}
-//     return result;
-// } 
-// console.log(repeater(repeater,(repeater(addOne,3,8)))); 
+const addOne = (value) => value + 1;
+let result = 0;
+const repeater = (f,times,value) => {
+    for (let i = 0; i < times; i++) { // i = 0 -> result = 4 -> i = 1 -> result = 5 -> i = 2
+        value = f(value);
+        result = value;
+    }
+    return result;
+} 
+console.log((repeater(addOne,3,8))); 
 
 
 
