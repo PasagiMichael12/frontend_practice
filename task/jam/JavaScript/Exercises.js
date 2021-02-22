@@ -136,19 +136,22 @@ console.log(helloWorld());
     
 
 const addOne = (a) =>{
-    let newValue = a + 1;
-    return newValue;
+    return a + 2;
 }
 
-const repeated = (f,n,x) =>{
-    let addFunc = f(x);
-    let arrVal = [addFunc];
-    for(let x = 0; x < n; x++){
-        let num = f(arrVal[x]);
-        arrVal.push(num);
+const repeated = (f,n,x) => {
+    for(let y = 0; y < n; y++){
+        x = f(x);
     }
-    //console.log(arrVal);
-    console.log(arrVal[n - 1]);
+    return x;
 }
 
-repeated(addOne, 2, 3);
+console.log(repeated(addOne, 5, 3))
+
+const addOne = (a) =>{
+    return a + 1;
+}
+
+const arr = [1, 2, 3, 4];
+const result = arr.map(newArr => addOne(newArr));
+console.log(result);
