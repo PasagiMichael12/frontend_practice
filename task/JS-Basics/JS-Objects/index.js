@@ -100,8 +100,8 @@ const arrayPairs = (object) => {
     //OR 
     //console.log(Object.entries(object)); // OTHER WAY
 };
-
 arrayPairs(object1);
+
 //======================
 //freeze the objects connot delete or change properties
 Object.freeze(object1);
@@ -142,4 +142,27 @@ const object1 = {
   console.log(descriptors1.property1.value);
   // expected output: 42
   
-
+  //hasOwnProperty(property) prototype undetectable
+  const properr = {};
+  
+const object1 = {
+    allon : 'Dev1', 
+    jamol: 'Dev2',
+    };
+const arrayszxc = [];
+const arrayPairs = (object) => { 
+    
+    for(key in object1)
+    {
+        arrayszxc.push(key,object1[key]);
+    }
+    return arrayszxc;
+    // const a = Object.keys(object);
+    // const b = a.map(w => {
+    //     return [w, object[w]];
+    // })
+    // console.log(b,'test');
+    //OR 
+    //console.log(Object.entries(object)); // OTHER WAY
+};
+console.log(arrayPairs(object1));
