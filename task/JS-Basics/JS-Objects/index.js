@@ -166,3 +166,48 @@ const arrayPairs = (object) => {
     //console.log(Object.entries(object)); // OTHER WAY
 };
 console.log(arrayPairs(object1));
+const object1 = {
+    allon : 'Dev1', 
+    jamol: 'Dev2',
+    };
+console.log(Object.entries(object1));
+
+
+const obj =  { a: 1, b: 1  };
+const obj2 = { a: 1, b: 1 };
+const obj3 = { a: 1, b: 2 };
+
+const checkObj = (value1, value2) => {
+    let firstVal = Object.keys(value1);
+    let secVal = Object.keys(value2);
+ 
+    firstVal.length !== secVal.length ? false : true;
+    for(const prop in value1)
+    {
+        if(value1[prop] !== value2[prop])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(checkObj(obj,obj2));
+// const checkObj = (value1,value2) => {
+
+//     let firstVal = Object.getOwnPropertyNames(value1);
+//     let secVal = Object.getOwnPropertyNames(value2);
+
+//     firstVal.length !== secVal.length ? false : true;
+//     for( value of firstVal)
+//     {
+//         if(value1[value] !== value2[value])
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(checkObj(obj,obj2));
+
+
+
