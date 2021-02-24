@@ -157,12 +157,16 @@ const result = arr.map(newArr => addOne(newArr));
 console.log(result);
 
 
+var regex = /<(“[^”]*”|'[^’]*’|[^'”>])*>/;
 
 const htmlEndTag = (a) => {
-    
-    let endTag = a.split("");
-    endTag.splice(1, 0, '/');
-    let x = endTag.join('')
-    return x;
+    if(regex.test(a)){
+        let endTag = a.split("");
+        endTag.splice(1, 0, '/');
+        let x = endTag.join('')
+        return x;
+    }else{
+        return 'Not a valid HTML Tag';
+    }
 }
-console.log(htmlEndTag("<h1>"))
+console.log(htmlEndTag("h1>"))
