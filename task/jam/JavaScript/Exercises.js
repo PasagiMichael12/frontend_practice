@@ -155,3 +155,14 @@ const addOne = (a) =>{
 const arr = [1, 2, 3, 4];
 const result = arr.map(newArr => addOne(newArr));
 console.log(result);
+
+
+
+const htmlEndTag = (a) => {
+    
+    let endTag = a.split("");
+    endTag.splice(1, 0, '/');
+    let x = endTag.join('')
+    return x;
+}
+console.log(htmlEndTag("<h1>"))
