@@ -1,0 +1,4 @@
+Regular expression is a sequence of characters that forms a search pattern.
+
+search() - uses an expression to search for a match, and returns the position of the match.
+replace() - method returns a modified string where the pattern is replaced.
