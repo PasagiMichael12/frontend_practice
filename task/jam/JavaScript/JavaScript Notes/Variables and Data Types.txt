@@ -1,8 +1,20 @@
 Variables
 
-let - block scope
-var - global scope
-const - constant
+let 
+    - block scope
+    - cannot be redeclare 
+        ex. let x = 0;
+        let x = 1; //wrong
+        x = 1; //right
+var 
+    - global scope
+    - can be redeclare
+        ex. var x = 0;
+        var x = 1; //right
+        x = 1; //right
+const 
+    - constant
+    - cannot change the initial value
 
 
 Data Types
@@ -71,12 +83,3 @@ Data Types
 
 7. Undefined
     value not yet assigned
-
-
-Array - data structure that we use to represent a list of items
-pop() -remove last array element
-splice() - remove specific array element by index
-push() - add array element on last
-unshift() - add array element at the beginning of an array
-shift() - remove array element at the beginning
-foreach() - go through each element of an array

@@ -1,0 +1,12 @@
+Array 
+    - data structure that we use to represent a list of items
+
+Common Array Methods
+
+.pop() -remove last array element
+.splice() - remove specific array element by index
+.push() - add array element at the end of an array
+.unshift() - add array element at the beginning of an array
+.shift() - remove array element at the beginning of an array
+.foreach() - loop through each element of an array and return each value
+.every() - loop through each element of an array and return boolean value for the condition
