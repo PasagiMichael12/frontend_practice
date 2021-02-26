@@ -7,11 +7,7 @@ const swapCase = (a) => {
     if(regex.test(a)){
         let newA = a.split("");
         for(let x = 0; x < newA.length; x++){
-            if(newA[x] == newA[x].toUpperCase()){
-                newA[x] = newA[x].toLowerCase();
-            }else{
-                newA[x] = newA[x].toUpperCase();
-            }
+            newA[x] == newA[x].toUpperCase() ? newA[x] = newA[x].toLowerCase() : newA[x] = newA[x].toUpperCase();
         }
         let finalResult = newA.join('');
         return finalResult;
