@@ -10,3 +10,4 @@ Common Array Methods
 .shift() - remove array element at the beginning of an array
 .foreach() - loop through each element of an array and return each value
 .every() - loop through each element of an array and return boolean value for the condition
+.splice() - removes an item from an array, and returns the removed item

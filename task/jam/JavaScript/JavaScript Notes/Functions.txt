@@ -1,0 +1,8 @@
+const functionName = (param) => {
+    conditions here...
+    return...
+}
+
+functionName(param);
+
+Function in JavaScript is considered as an object.
