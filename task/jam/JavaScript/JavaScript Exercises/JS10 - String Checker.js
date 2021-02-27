@@ -8,4 +8,4 @@ const isString = (a) => {
     return result;
 }
 
-console.log(isString("GG1GGGGG"))
+console.log(isString(1))

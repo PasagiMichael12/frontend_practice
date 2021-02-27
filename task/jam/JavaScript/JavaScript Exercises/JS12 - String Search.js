@@ -5,6 +5,7 @@ console.log(searchKeyword('when you say you want me to go', 'you'))
 const searchKeyword = (a, b) => {
     let arr = a.split(" ");
     let val = 0;
+    
     if(arr.includes(b)){
         arr.filter(newArr => newArr === b ? val += 1 : val)
         return `"${b}" keyword was found ${val} times.`
