@@ -3,11 +3,6 @@ console.log(swapcase('aBcD')) //AbCd */
 
 var regex = /^[a-zA-Z]+$/;
 
-const funx = (value, index, array) => {
-    value == value.toUpperCase() ? value = value.toLowerCase() : value = value.toUpperCase();
-}
-
-
 const swapCase = (a) => {
     if(regex.test(a)){
         let newA = a.split("");
@@ -16,6 +11,5 @@ const swapCase = (a) => {
         return "Please enter string only.";
     }
 }
-
 
 console.log(swapCase("StRing"))
