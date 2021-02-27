@@ -9,8 +9,7 @@ const swapCase = (a) => {
         for(let x = 0; x < newA.length; x++){
             newA[x] == newA[x].toUpperCase() ? newA[x] = newA[x].toLowerCase() : newA[x] = newA[x].toUpperCase();
         }
-        let finalResult = newA.join('');
-        return finalResult;
+        return newA.join('');
     }else{
         return "Please enter string only.";
     }

@@ -6,11 +6,7 @@ const searchKeyword = (a, b) => {
     let arr = a.split(" ");
     let val = 0;
     if(arr.includes(b)){
-        for(let x = 0; x < arr.length; x++){
-            if(arr[x] === b){
-                val += 1
-            }
-        }
+        arr.filter(newArr => newArr === b ? val += 1 : val)
         return `"${b}" keyword was found ${val} times.`
     }else{
         return `"${b}" keyword not found.`;

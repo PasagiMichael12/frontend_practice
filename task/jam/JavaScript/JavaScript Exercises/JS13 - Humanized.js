@@ -9,9 +9,9 @@ rd - 3
 */
 
 const conv = (num) => {
-    let converted = num.toString()
-    let numArr = converted.split("").pop();
-    if(numArr == 0 || numArr == 4 || numArr == 5 || numArr == 6 || numArr == 7 || numArr == 8 || numArr == 9){
+    let numArr = num.toString().split("").pop();
+    let th = [0, 4, 5, 6, 7, 8, 9];
+    if(th.some(n => n == numArr)){
         return `${num}th`
     }else if(numArr == 1){
         return `${num}st`
