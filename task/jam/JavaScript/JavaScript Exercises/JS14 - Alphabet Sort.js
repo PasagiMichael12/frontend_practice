@@ -5,5 +5,4 @@ const arrange = (a) => {
     let arr = a.split("");
     return arr.sort().join('');
 }
-
 console.log(arrange('acab'))

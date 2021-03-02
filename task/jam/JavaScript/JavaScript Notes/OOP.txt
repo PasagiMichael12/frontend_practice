@@ -1,8 +1,8 @@
 4 Pillars of OOP
 Abstraction
 Encapsulation
-Inheritance
-Polymorphism - many forms
+Inheritance const pasagi = new jamol / constructor
+Polymorphism - many forms ---- method overriding
 
 Class & Object
 Class - parent, whole, majority
