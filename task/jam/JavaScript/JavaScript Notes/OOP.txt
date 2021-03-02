@@ -1,8 +1,13 @@
+uses constructors as class
+
 OOP - Object Oriented Programming
 - based on real world scenarion/things
 
-4 Pillars of OOP
+4 Pillars of OOP  - Lexical Scope
 Abstraction - simple model of a more complex thing
+-dvd player 
+
+
 
 Encapsulation - 
 it binds the code and the data together and keeps them safe from outside interference.
@@ -22,3 +27,23 @@ Object - child, pieces, characteristics, properties
 
 this 
 refers to the current object in a method or constructor.
+
+function createNewPerson(name) {
+  const obj = {};
+  obj.name = name;
+  obj.greeting = function() {
+    alert('Hi! I\'m ' + obj.name + '.');
+  };
+  return obj;
+}
+
+
+
+
+1.) OOP
+2.) Declaring objects,accessing elements inside objects.
+3.)Pillars of OOP
+4.)OOP vs Procedural vs functional 
+5.)primitives and reference type
+6.) factories and constructor 
+7.) review the this keyword.
