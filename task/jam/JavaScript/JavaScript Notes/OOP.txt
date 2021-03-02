@@ -1,8 +1,17 @@
 4 Pillars of OOP
-Abstraction
-Encapsulation
-Inheritance const pasagi = new jamol / constructor
-Polymorphism - many forms ---- method overriding
+Abstraction - simple model of a more complex thing
+
+Encapsulation - 
+it binds the code and the data together and keeps them safe from outside interference.
+
+
+Inheritance - const pasagi = new jamol / uses constructor
+
+
+
+Polymorphism - many forms ---- method overriding/overloading
+- is the process of using same method name by
+multiple classes and redefines methods for the derived classes.
 
 Class & Object
 Class - parent, whole, majority
