@@ -2,4 +2,9 @@
 Abstraction
 Encapsulation
 Inheritance
-Polymorphism
+Polymorphism - many forms
+
+Class & Object
+Class - parent, whole, majority
+Object - child, pieces, characteristics, properties
+
