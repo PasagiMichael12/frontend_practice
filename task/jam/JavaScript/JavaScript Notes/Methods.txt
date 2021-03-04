@@ -1,3 +1,5 @@
+String Methods
+
 forEach >> for doing a thing with or to every entry in an array;
 filter >> for producing a new array containing only qualifying entries;
 map >> for making a one-to-one new array by transforming an existing array;

@@ -1,8 +1,12 @@
+
+Function in JavaScript is considered as an object.
+
+#Creating a function
 const functionName = (param) => {
     conditions here...
     return...
 }
 
+#Calling the function
 functionName(param);
 
-Function in JavaScript is considered as an object.
