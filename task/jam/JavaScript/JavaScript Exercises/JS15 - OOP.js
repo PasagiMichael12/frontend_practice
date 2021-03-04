@@ -33,6 +33,28 @@ let rate = 20
 function computeSalary(baseSalary, overtime, rate){
     return baseSalary + (overtime * rate)
 }
+
+//OOP
+
+const Salary = function(baseSalary, overtime, rate){
+    let base = baseSalary;
+    let ot = overtime;
+    let rt = rate;
+
+    const computeSalary = function(){
+        return base + (ot * rt);
+    }
+
+    this.salary = function(){
+        return computeSalary();
+    }
+}
+let employee = new Salary(1000, 3, 500)
+console.log(employee.salary())
+
+
+//#3
+
 function  employee(name, salary){
     this.name= name;
     this.salary= salary;
@@ -47,25 +69,21 @@ emp1.getSalary();
 {}
 //
 
-const Employee = function(name, salary) {
+//OOP
+
+const Emp = function(name, salary) {
     let empName = name;
     let empSalary = salary;
     
-    this.
+    const compute = function() {
+        return empSalary * 7;
+    }
+
+    this.employee = function(){
+        return `${empName}: ` + compute();
+    }
     
 }
-const Salary = function(baseSalary, overtime, rate){
-    let base = baseSalary;
-    let ot = overtime;
-    let rt = rate;
 
-    const computeSalary = function(){
-        return base + (ot * rt);
-    }
-
-    this.salary = function(){
-        return computeSalary();
-    }
-}
-let employee = new Employee(1000, 3, 500)
-console.log(employee.salary())
+let emp1 = new Emp('jamol', 2000);
+console.log(emp1.employee());
