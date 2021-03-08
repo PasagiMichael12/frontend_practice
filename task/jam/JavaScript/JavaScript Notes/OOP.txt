@@ -1,59 +1,56 @@
-uses constructors as class
+*Object Oriented Programming
+ - uses constructors as class
+ - based on real world scenarios/things
+ - more of lexical scope
 
-OOP - Object Oriented Programming
-- based on real world scenarion/things
+*4 Pillars of OOP
+1. Abstraction
+ - simple model of a more complex thing
+ - dvd player 
 
-4 Pillars of OOP  - Lexical Scope
-Abstraction - simple model of a more complex thing
--dvd player 
+2. Encapsulation 
+ - binds the code and the data together and keeps them safe from outside interference.
 
+3. Inheritance 
+ - const pasagi = new jamol(<param>); // jamol is the constructor
 
+4. Polymorphism 
+ - means many forms // method overriding/overloading
+ - process of using same method name by multiple classes and redefines methods for the derived classes.
 
-Encapsulation - 
-it binds the code and the data together and keeps them safe from outside interference.
-
-
-Inheritance - const pasagi = new jamol / uses constructor
-
-
-
-Polymorphism - many forms ---- method overriding/overloading
-- is the process of using same method name by
-multiple classes and redefines methods for the derived classes.
-
-Class & Object
+*Class & Object
 Class - parent, whole, majority
 Object - child, pieces, characteristics, properties
 
-this 
-refers to the current object in a method or constructor.
+*this Keyword
+ - refers to the current object in a method or constructor.
 
+*Declaring object/s and accessing elements inside object/s
 
-
-OOP
-2.) Declaring objects,accessing elements inside objects.
+//declare and instantiation 
 const obj = {
     properties: value;
 }
 
+//accessing elements inside the object
 obj.property;
 
-3.)Pillars of OOP
--Encapsulation
--Inheritance
--Polymorphism
--Abstraction
-4.)OOP vs Procedural vs functional 
+*OOP vs Procedural vs Functional 
 
--Object-oriented programming (OOP) is about encapsulating data and behavior into objects.
--Functional programming (FP) is about passing data from function to function to function to get a result.
--Procedural programming (PP), also known as inline programming takes a top-down approach. It is about 
-writing a list of instructions to tell the computer what to do step by step. It relies on procedures or routines.
+Object-oriented programming (OOP) 
+ - encapsulating data and behavior into objects.
+Functional programming (FP) 
+ - passing data from function to function to function to get a result.
+Procedural programming (PP) 
+ - also known as inline programming takes a top-down approach. 
+ It is about writing a list of instructions to tell the computer what to do step by step. 
+ It relies on procedures or routines.
 
-5.)primitives and reference type
+*Primitives and Reference type
+
+Primitive type
 
 Six Data Types that are primitives, checked by typeof operator:
-
 undefined : typeof instance === "undefined"
 Boolean : typeof instance === "boolean"
 Number : typeof instance === "number"
@@ -63,7 +60,7 @@ Symbol : typeof instance === "symbol"
 
 The size of a primitive value is fixed, therefore, JavaScript stores the primitive value on the stack.
 
-On the other hand, the size of a reference value is dynamic so JavaScript stores the reference value on the heap
+On the other hand, the size of a reference value is dynamic so JavaScript stores the reference value on the heap.
 
 If the value is a primitive value, when you access the variable, you manipulate the actual value stored in that variable. 
 In other words, the variable that stores a primitive value is accessed by value.
@@ -71,8 +68,9 @@ In other words, the variable that stores a primitive value is accessed by value.
 Unlike a primitive value, when you manipulate an object, you work on the reference of that object, 
 rather than the actual object. It means a variable that stores an object is accessed by reference.
 
-6.) factories and constructor 
--need to instantiate an object
+*Factories and Constructor 
+
+// need to instantiate an object
 A factory function is any function which is not a class or constructor that returns a (presumably new) object. 
 In JavaScript, any function can return an object. When it does so without the new keyword, it’s a factory function.
 function person(firstName, lastName, age) {
@@ -83,7 +81,7 @@ function person(firstName, lastName, age) {
   return person;
 }
 
--direct to object
+// direct to object
  The convention of defining a constructor function is to use capitalize function name to denote that this is a constructor function, 
  the use case of this function is that creating similar 
  types of objects with the new keyword, then later we can do instance checks using theinstanceof keyword in JavaScript.
@@ -93,5 +91,3 @@ function person(firstName, lastName, age) {
   this.lastName = lastName;
   this.age = age;
 }
-7.) review the this keyword
-refers to the current object in a method or constructor.
