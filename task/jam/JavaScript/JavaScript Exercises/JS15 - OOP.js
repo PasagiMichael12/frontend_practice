@@ -10,6 +10,10 @@ function oldWay(a,b,ans){
 }
 
 //OOP
+
+const sum = (a,b) => {
+    
+}
 const Sum = function(a, b) {
     let num1 = a;
     let num2 = b;
@@ -87,3 +91,22 @@ const Emp = function(name, salary) {
 
 let emp1 = new Emp('jamol', 2000);
 console.log(emp1.employee());
+
+const sample = {
+    students: ["allon","nicole","daniel"]
+}
+console.log(sample.students[2]);
+console.log(sample["students"][2]);
+
+const data = {
+    code: 42,
+    items: [{
+        id: 1,
+        name: 'foo'
+    }, {
+        id: 2,
+        name: 'bar'
+    }]
+};
+
+console.log(data.items[1].id)
