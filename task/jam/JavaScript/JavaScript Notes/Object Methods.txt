@@ -1,0 +1,17 @@
+
+hasOwnProperty()
+
+All descendants of Object inherit the hasOwnProperty method. This method can be used to determine whether 
+an object has the specified property as a direct property of that object; unlike the in operator,
+this method does not check for a property in the object's prototype chain. 
+If an Object is an Array, hasOwnProperty method can check whether an index exists.
+
+key()
+
+Object.keys() returns an array whose elements are strings corresponding to the enumerable properties 
+found directly upon object. 
+The ordering of the properties is the same as that given by looping over the properties of the object manually.
+
+Object.keys(obj) – returns an array of keys.
+Object.values(obj) – returns an array of values.
+Object.entries(obj) – returns an array of [key, value] pairs.

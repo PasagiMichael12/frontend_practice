@@ -11,9 +11,6 @@ function oldWay(a,b,ans){
 
 //OOP
 
-const sum = (a,b) => {
-    
-}
 const Sum = function(a, b) {
     let num1 = a;
     let num2 = b;
