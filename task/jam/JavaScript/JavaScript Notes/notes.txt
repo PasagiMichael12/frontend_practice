@@ -1,0 +1,6 @@
+computer programming is a PROCESS which uses different PROCEDURES to come up with a RESULT
+
+black box Abstraction
+    - the process happens inside the box (logic) 
+    - usually, supply the information to be evaluated then it will go through the BOX (procedure) & out the result
+    
