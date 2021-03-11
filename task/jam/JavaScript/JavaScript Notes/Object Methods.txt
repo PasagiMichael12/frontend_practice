@@ -1,10 +1,6 @@
-
-hasOwnProperty()
-
-All descendants of Object inherit the hasOwnProperty method. This method can be used to determine whether 
-an object has the specified property as a direct property of that object; unlike the in operator,
-this method does not check for a property in the object's prototype chain. 
-If an Object is an Array, hasOwnProperty method can check whether an index exists.
+Object.prototype.hasOwnProperty()
+Returns a boolean indicating whether an object contains the specified 
+property as a direct property of that object and not inherited through the prototype chain.
 
 key()
 
@@ -21,3 +17,6 @@ The Object.fromEntries() method transforms a list of key-value pairs into an obj
 
 for/in - for objects
 for of = for iterable items (array)
+
+Object.getOwnPropertyNames()
+Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties.
