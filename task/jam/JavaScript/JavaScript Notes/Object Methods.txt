@@ -15,3 +15,9 @@ The ordering of the properties is the same as that given by looping over the pro
 Object.keys(obj) – returns an array of keys.
 Object.values(obj) – returns an array of values.
 Object.entries(obj) – returns an array of [key, value] pairs.
+
+Object.fromEntries()
+The Object.fromEntries() method transforms a list of key-value pairs into an object.
+
+for/in - for objects
+for of = for iterable items (array)
