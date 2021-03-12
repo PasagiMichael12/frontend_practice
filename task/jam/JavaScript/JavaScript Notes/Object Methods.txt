@@ -31,3 +31,7 @@ Note: Object Constructors always starts with capital letter
 prototype
  Stated simply, the prototype is another object that the original object inherits from, 
  which is to say, the original object has access to all of its prototype’s methods and properties.
+
+
+property == key
+value == key value

@@ -2,7 +2,7 @@
 2.) Write a JavaScript function to retrieve all the values of an object's properties.
 3.). Write a JavaScript function to check whether an object contains given property.*/
 
-//1
+//1. Write a JavaScript function to delete the property from the following object.
 function Delete(object, param){
     this.delete = function(){
         delete object[param];
@@ -15,7 +15,7 @@ let text = 'c';
 let objDelete = new Delete(object, text);
 console.log(objDelete.delete());
 
-//2
+//2. Write a JavaScript function to retrieve all the values of an object's properties.
 function Retrieve(object){
     this.retrieve = function(){
         return Object.values(object);
@@ -27,7 +27,7 @@ const object = { a: 2, b: 1, c: 3 };
 let objRetrieve = new Retrieve(object);
 console.log(objRetrieve.retrieve());
 
-//3
+//3. Write a JavaScript function to check whether an object contains given property.
 function Present(object, param){
     this.check = function(){
         return param in object;
