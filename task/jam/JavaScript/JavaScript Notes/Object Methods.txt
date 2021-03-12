@@ -20,3 +20,14 @@ for of = for iterable items (array)
 
 Object.getOwnPropertyNames()
 Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties.
+
+Object.prototype.toLocaleString(<element>)
+Calls toString().
+
+Object.create() very simply returns a
+ new object with the specified prototype and any additional properties you want to add
+Note: Object Constructors always starts with capital letter
+
+prototype
+ Stated simply, the prototype is another object that the original object inherits from, 
+ which is to say, the original object has access to all of its prototype’s methods and properties.
