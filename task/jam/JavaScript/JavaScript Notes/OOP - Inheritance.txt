@@ -25,3 +25,38 @@ class SymmetricMatrix extends Matrix {
 let matrix = new SymmetricMatrix(5, (x, y) => `${x},${y}`);
 console.log(matrix.get(2, 3));
 // → 3,2
+
+
+The use of the word extends indicates that this class shouldn’t be directly based on the default Object prototype but on some other class. This is called the superclass. The derived class is the subclass.
+
+Inheritance allows us to build slightly different data types from existing data types with relatively little work.
+
+
+
+uses the keyword 'extends <parent class>' to inherit the functions from the parent class.
+
+
+On this example the class 'Model' inherits the behavior of parent Car
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+
+The super() method refers to the parent class.
+
+By calling the super() method in the constructor method, 
+we call the parent's constructor method and gets access to the parent's properties and methods.
+
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}

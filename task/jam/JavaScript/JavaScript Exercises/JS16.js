@@ -55,3 +55,20 @@ const object3 = { a: 2, b: 1, c: 3 };
 let objCompare = new Compare(object1, object2);
 console.log(objCompare.try())
 
+
+
+class Car {
+    constructor(brand) {
+      this._carname = brand;
+    }
+    get carname() {
+      return this._carname;
+    }
+    set carname(x) {
+      this._carname = x;
+    }
+  }
+  
+  let myCar = new Car("Ford");
+  
+  console.log(myCar.carname);
