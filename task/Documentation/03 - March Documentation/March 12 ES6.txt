@@ -1,0 +1,88 @@
+9:00 am 
+
+
+
+//====== ES6 =======//
+let, const, map, filter, => 
+
+let for changes in variable
+const for read only variable cannot be change
+map iterating the values inside array 1 by 1
+filter iterating values with boolean true answers
+
+//object destructuring
+getting properties and store to different variables
+=> const address = {
+	street: '',
+	city: '',
+	country: ''
+};
+to
+const { street, city, country } = address; 
+inheriting the properties inside the address object.
+cons { street: st } = address; 
+getting only the street property to the st variable
+
+spread operator
+const first = [1,2,3];
+const second = [4,5,6];
+
+const combined = first.concat(second);
+//same but es6 syntax
+const combined = [...first,...second];
+
+cloning array using spread 
+const clone = [...first];
+cloning object using spread
+
+const first = {name: allon};
+const second = {job: cadet software eng};
+
+const combined = {...first,...second, //other property able to add};
+
+cloning object 
+const clone = {...first};
+
+in OOP (inheritance)
+using extends
+
+Class Person {
+	constructor(name) {
+		this.name = name;
+	}
+	walk() {
+		console.log("walk");
+	}
+}
+Class Teacher extends Person { // inheriting the properties and methods of person
+
+	constructor(name,degree){
+		super(name); //using the this.name of 		person.
+		this.degree = degree;
+	}
+	teach() {
+		console.log("teach");
+	}
+}
+
+const teacher = new Teacher('allon','CPE');
+
+
+Modules//
+import { Person } from './(name of the js file)';
+export from other js files. in the same folder
+
+exports //
+export function (name){}
+
+class == objects // syntactic sugars
+default {} <-- removed for defaul exports
+//default -> import ... from '';
+//name -> import {...} from '';
+
+multiple imports 
+import Teacher, { name } from './teacher';
+import React, { Component } from 'react'; from dependencies.
+
+
+

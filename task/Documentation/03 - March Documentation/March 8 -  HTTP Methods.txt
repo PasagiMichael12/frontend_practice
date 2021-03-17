@@ -1,0 +1,13 @@
+9:00 am
+
+
+
+//==========HTTP METHODS=========//
+
+POST, GET, PUT, PATCH, DELETE
+
+POST => Create / hidden in url
+GET => Read / list of customers. Use pagination, sorting and filtering to navigate big lists.
+PUT => Update or Replace => 405 (Method Not Allowed), unless you want to update/replace every resource in the entire collection.
+PATCH => Update / Modify => update the collection itself
+DELETE => Delete collection of data

@@ -1,0 +1,120 @@
+//EXAMINE THE DOCUMENT OBJECT//
+//console.dir(document);
+
+//console.log(document.domain); // url
+//getting entire url
+//console.log(document.URL);
+//console.log(document.title);
+//console.log(document.head);
+//console.log(document.links);
+//console.log(document.images);
+
+//SELECTORS 
+//GETELEMENTBYID//
+//console.log(document.getElementById('header-title'));
+// let headertitle = document.getElementById('header-title');
+//console.log(headertitle);
+//headertitle.textContent = 'hello'; //focus on what text are displaying regardless in style
+//headertitle.innerText = 'hellos'; //focus on style
+//headertitle.innerHTML = ' <h3>Hello</h3> // focus on changing or adding elements inside the id that been called.
+
+//GETELEMENTSBYCLASSNAME//
+// let items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor = 'yellow';
+// //Gives Error
+// //items.style.backgroundColor = 'tomato';
+// for (let i = 0; i < items.length; i++) {
+//     items[i].style.backgroundColor = '#f4f4f4';
+//     items[i].style.color = '#000';
+// }
+//iterate thru list and change the color to black
+
+
+//GETELEMENTSBYTAGNAME//
+// let li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor = 'yellow';
+
+// for (let i = 0; i < li.length; i++) {
+//     li[i].style.backgroundColor = '#f4f4f4';
+//     li[i].style.color = '#000';
+// }
+
+// QUERYSELECTOR // using only for one item grabs the first one 
+// let header = document.querySelector('#navbar');
+// header.style.borderBottom = 'solid 4px #ccc';
+
+// let input = document.querySelector('input');
+// input.value = "hello World";
+
+// let submit = document.querySelector('input[type="submit"]');
+// submit.value = 'SEND';
+
+// let item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// let lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+// let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'coral';
+
+// QUERY SELECTOR ALL // more than 1 
+// let titles = document.querySelectorAll('.title');
+// console.log(titles);
+// titles[0].textContent = 'hello';
+// titles[1].textContent = 'HI';
+
+// let odd = document.querySelectorAll('li:nth-child(odd    )');
+// let even = document.querySelectorAll('li:nth-child(even)');
+
+// for (let i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = '#f4f4f4';   
+//     even[i].style.backgroundColor = '#ccc';   
+// }
+
+
+// TRAVERSING THE DOM //
+//querinng parent nodes and child node
+// let itemList = document.querySelector('#items');
+// // parent node
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+//parentelement
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+// Child nodes
+
+//console.log(itemList.childNodes); //avoid using childnodes
+//better children
+// console.log(itemList.children); // html collection
+// //changing specific child
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
+
+//first Child
+// console.log(itemList.firstChild); #text
+// // firstElemen Child better than firstChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'hello 4';
+
+
+// SIBLING NODES // nexSibling
+// console.log(itemList.nextSibling); //#text
+// // nextElementSibling
+// console.log(itemList.nextElementSibling); //shows with next sibling
+// //previous sibling
+// console.log(itemList.previousSibling); //#text
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green';

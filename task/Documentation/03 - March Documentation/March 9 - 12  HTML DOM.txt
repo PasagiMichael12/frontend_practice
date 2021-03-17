@@ -1,0 +1,33 @@
+9:00 am 
+
+
+
+//========HTML DOM==========//
+
+Manipulation of: 
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+------------------------
+- getElementById('id of html tag');
+- innerHTML => replacing the content of HTML elements
+html elements => via Id, TagName, ClassName
+// example of changing html element 
+<p id ="id"> </p> .. display 'okok';
+-- getElementById('id').innerHTML = 'okok';
+//change the attribute value of an html element
+element.attribute = new value;
+//change style of an html element
+element.style.property = new style.
+//set attribute
+element.setAttribute(attribute, value)
+------------------------------
+//image
+document.getElementById("myImage").src = "landscape.jpg";
+//styling
+document.getElementById("p2").style.color = "blue";
