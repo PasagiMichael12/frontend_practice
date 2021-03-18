@@ -60,3 +60,11 @@ class Model extends Car {
     return this.present() + ', it is a ' + this.model;
   }
 }
+
+call() function. 
+This function basically allows you to call a function defined somewhere else, but in the current context
+function Teacher(first, last, age, gender, interests, subject) {
+  Person.call(this, first, last, age, gender, interests);
+
+  this.subject = subject;
+}
