@@ -29,16 +29,32 @@ games.forEach(game => {
 });
 
 
-
 // 1.) Create an object called shape that has a type property and a getType method. // ex const shape = {};
+function shape(type, getType) {
+    this.type = type,
+    this.getType = function() {
+        return this.type;
+    }
+};
+
 // 2.) Define a Triangle constructor function whose prototype is shape. 
 //Objects created with Triangle should have three own properties: a, b and c representing the sides of a triangle.
+function Triangle(a, b, c) {
+    this.a = a,
+    this.b = b,
+    this.c = c
+};
+
+Triangle.prototype = new shape('triangle');
+Triangle.prototype.constructor = Triangle;
+
 // 3.) Add a new method to the prototype called getPerimeter.
+Triangle.prototype.getPerimeter = function() {
+return this.a + this.b + this.c;
+};
 
-const shape = {
-    
-}
 
-const Triangle = function(a, b, c){
-
-}
+var triangle1 = new Triangle(3, 4, 4);
+console.log(shape.prototype.isPrototypeOf(triangle1));
+console.log(triangle1.getPerimeter());
+console.log(triangle1.getType());
