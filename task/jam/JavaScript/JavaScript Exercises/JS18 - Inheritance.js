@@ -55,6 +55,5 @@ return this.a + this.b + this.c;
 
 
 var triangle1 = new Triangle(3, 4, 4);
-console.log(shape.prototype.isPrototypeOf(triangle1));
 console.log(triangle1.getPerimeter());
 console.log(triangle1.getType());
