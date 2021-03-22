@@ -20,19 +20,21 @@ const games = [
     }
 ];
 
-games.forEach(game => {
-    if(game.status == "played"){
-        console.log(`${game.title} is already played.`);
-    }else{
-        console.log(`${game.title} is not yet played.`);
-    }
-});
+const check = (a) => {
+    a.forEach(element => {
+        if(element.status == "played"){
+            console.log(`${game.title} is already played.`);
+        }else{
+            console.log(`${game.title} is not yet played.`);
+        }
+    });
+}
 
 
 // 1.) Create an object called shape that has a type property and a getType method. // ex const shape = {};
-function shape(type, getType) {
-    this.type = type,
-    this.getType = function() {
+const shape = {
+    type: '',
+    getType : function(){
         return this.type;
     }
 };
@@ -42,10 +44,12 @@ function shape(type, getType) {
 function Triangle(a, b, c) {
     this.a = a,
     this.b = b,
-    this.c = c
+    this.c = c,
+    this.type = 'triangle'
 };
 
-Triangle.prototype = new shape('triangle');
+
+Triangle.prototype = shape;
 Triangle.prototype.constructor = Triangle;
 
 // 3.) Add a new method to the prototype called getPerimeter.

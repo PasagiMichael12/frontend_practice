@@ -68,3 +68,75 @@ function Teacher(first, last, age, gender, interests, subject) {
 
   this.subject = subject;
 }
+
+Prototype Inheritance
+All JavaScript objects inherit properties and methods from a prototype:
+
+Date objects inherit from Date.prototype
+Array objects inherit from Array.prototype
+Person objects inherit from Person.prototype
+The Object.prototype is on the top of the prototype inheritance chain:
+
+Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+The JavaScript prototype property allows you to add new properties to object constructors:
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+Example
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+
+
+using the EXTENDS keyword
+
+parent: 'super class' 
+
+class Particle{
+  constructor(x, y){
+    this.x = x;
+    this.y = y;
+  }
+}
+
+child: 'subclass'
+
+class Square extends Particle{
+  //inherits the behavior of the parent class
+}
+
+using the SUPER(<constructor paramete>) keyword
+
+call & execute the contructor function from the parent class
+
+parent: 
+class Particle{
+  constructor(){
+    
+  }
+}
+
+class Square extends Particle{
+  //extends keyword inherits the behavior of the parent class
+
+  constructor(x, y){
+    super(x, y);
+  }
+}
