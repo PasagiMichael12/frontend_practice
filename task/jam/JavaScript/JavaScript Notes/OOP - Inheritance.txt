@@ -140,3 +140,17 @@ class Square extends Particle{
     super(x, y);
   }
 }
+
+JavaScript uses prototypal inheritance.
+https://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical
+
+The constructor pattern in JavaScript is the prototypal pattern inverted. Instead of creating an object you create a constructor. 
+The new keyword binds the this pointer inside the constructor to a clone of the prototype of the constructor.
+
+two things to make prototypal inheritance work:
+
+A way to create a new object (e.g. object literals).
+A way to extend an existing object (e.g. Object.create).
+Prototypal Inheritance is Dynamic
+One of the most important advantages of prototypal inheritance is that you can add new properties to prototypes after they are created. This allows you to add new methods 
+to a prototype which will be automatically made available to all the objects which delegate to that prototype.
