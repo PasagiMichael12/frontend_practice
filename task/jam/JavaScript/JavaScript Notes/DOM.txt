@@ -1,1 +1,16 @@
 DOM - Document Object Model
+
+elements of html represented by javascript as object
+every element is an element object
+
+window object
+
+console.dir(window) - window directory/ browser directory
+console.dir(document) - html page element directory
+
+
+//upon loading the page it will show the body of the html and its functions
+window.addEventListener("load", function(){
+
+
+})
