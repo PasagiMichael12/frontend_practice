@@ -52,3 +52,8 @@ this is similar to the above example
 btn.addEventListener("click", function(e){
     action here...
 });
+.querySelector - accesses the first element 
+.querySelectorAll - access all element and throw it as an array
+
+.childNodes - list out the main tags on the selected element block
+.nodeName
