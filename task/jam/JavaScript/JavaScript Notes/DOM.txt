@@ -1,4 +1,6 @@
 DOM - Document Object Model
+allows to manipulate html document
+loads once the page loads
 
 elements of html represented by javascript as object
 every element is an element object
@@ -14,3 +16,39 @@ window.addEventListener("load", function(){
 
 
 })
+
+
+id - #
+class = .
+
+Element Selector
+
+getElementById
+
+create a variable and use the selector to access the element
+
+let name = document.getElementById("<id_tag_in_html">);
+
+.innerHTML = modify the content of an element
+
+these following selectors treated each element as an array element
+.getElementsByClassName = selects element within the same class
+.getElementsByTagName = select all elements that has the tag
+
+
+onlick & function
+
+onclick - can only call one event assigned to an element
+
+btn.onclick = <function_name>();
+
+function <function_name>(){
+    action here...
+}
+
+addEventListener - can call multiple event assigned to an element
+
+this is similar to the above example
+btn.addEventListener("click", function(e){
+    action here...
+});
