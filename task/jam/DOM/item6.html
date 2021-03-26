@@ -40,10 +40,22 @@
     ];
     
     for(let x = 0; x < books.length; x++){
+      
+        var unorderedList = document.createElement('ul');
+        var list = document.createElement('li');
         var tag = document.createElement('p');
         var content = document.createTextNode(`${books[x].title}` + " by " + `${books[x].author}`);
+        var link = document.createElement('a');
+        link.setAttribute("href", "https://www.google.com/");
+        var image = document.createElement('img');
+        image.setAttribute("src", "https://placekitten.com/640/360")
+        
+        link.appendChild(image);
         tag.appendChild(content);
-        document.body.appendChild(tag);
+        list.append(link);
+        list.append(tag);
+        unorderedList.append(list);
+        document.body.appendChild(unorderedList);
        
     };
     </script>
