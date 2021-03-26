@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="num" type="text">
+        <button id="check" type="submit">Check</button>
+    </div>
+
+    
+    <script>
+        document.getElementById("check").addEventListener('click', validate);
+        
+        function validate(){
+            var numbersOnly = /^[-+]?[0-9]+$/;
+            var num = document.getElementById("num").value;
+            if(num.match(numbersOnly)){
+                let arr = Array.from(num);
+                if(arr[0] % 2 == 0){
+                    alert(`${arr[0]}` + " is EVEN");
+                }else{
+                    alert(`${arr[0]}` + " is ODD");
+                }
+            }else{
+                alert("NOT A NUMBER");
+            }
+        }
+
+    </script>
+</body>
+</html>

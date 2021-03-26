@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="bookPage">
-        <h1>Book Archivesaaa</h1>
+    <div class="bookPage">
+        <h1>Book Archives</h1>
     </div>
 
 
@@ -38,13 +38,12 @@
         alreadyRead: false
       }
     ];
-    var bookPage = document.getElementById("bookPage");
+    
     for(let x = 0; x < books.length; x++){
-        
-        var tag = document.createAttribute("p");
-        var content = document.createTextNode(`${books.title}` + "by" + `${books.author}`);
+        var tag = document.createElement('p');
+        var content = document.createTextNode(`${books[x].title}` + " by " + `${books[x].author}`);
         tag.appendChild(content);
-        bookPage.appendChild(tag);
+        document.body.appendChild(tag);
        
     };
     </script>
