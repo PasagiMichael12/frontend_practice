@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span>
+        <span id="source">
+         Here's a star:
+         <img src="http://lorempixel.com/400/200">
+         </span>
+         <span id="target">
+          Move it here:
+          </span>
+        </span>
+        <!-- Write some JavaScript
+         code below which moves the star from 'source' to the end of 'target', without changing the text. -->
+    <script>
+        document.getElementById('source').addEventListener('click', move);
+        
+        var oldParent = document.getElementById("source");
+        var newParent = document.getElementById("target");
+
+        function move(){
+           newParent.append(oldParent.childNodes[1]);
+        } 
+    </script>
+</body>
+</html>

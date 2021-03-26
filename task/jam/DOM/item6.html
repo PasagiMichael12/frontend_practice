@@ -44,18 +44,25 @@
         var unorderedList = document.createElement('ul');
         var list = document.createElement('li');
         var tag = document.createElement('p');
+        tag.setAttribute("id", "bookList")
         var content = document.createTextNode(`${books[x].title}` + " by " + `${books[x].author}`);
         var link = document.createElement('a');
         link.setAttribute("href", "https://www.google.com/");
         var image = document.createElement('img');
         image.setAttribute("src", "https://placekitten.com/640/360")
         
-        link.appendChild(image);
         tag.appendChild(content);
-        list.append(link);
+        link.appendChild(image);
         list.append(tag);
+        list.append(link);
         unorderedList.append(list);
         document.body.appendChild(unorderedList);
+
+        if(books[x].alreadyRead == true){
+          document.getElementById("bookList").style.color = "red";
+        }else{
+          document.getElementById("bookList").style.color = "green";
+        }
        
     };
     </script>
