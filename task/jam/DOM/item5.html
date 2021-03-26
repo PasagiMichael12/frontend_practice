@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="sky">
+        <!-- Write some JavaScript 
+        code below which creates an image, sets its 'src' property to a star, and inserts it into the empty span. -->
+    </span>
+    <script>
+        var sky = document.getElementById("sky");
+        var image = document.createElement("img");
+        image.setAttribute("src", "https://placekitten.com/640/360");
+        sky.appendChild(image);
+        // document.body.appendChild(sky);
+    </script>
+  </body>
+</html>
