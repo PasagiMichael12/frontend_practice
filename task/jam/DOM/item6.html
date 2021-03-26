@@ -59,9 +59,9 @@
         document.body.appendChild(unorderedList);
 
         if(books[x].alreadyRead == true){
-          document.getElementById("bookList").style.color = "red";
+          tag.setAttribute("style", "color:red;");
         }else{
-          document.getElementById("bookList").style.color = "green";
+          tag.setAttribute("style", "color:green;");
         }
        
     };
