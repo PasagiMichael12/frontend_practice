@@ -19,13 +19,12 @@
         function validate(){
             var numbersOnly = /^[-+]?[0-9]+$/;
             var num = document.getElementById("num").value;
+
             if(num.match(numbersOnly)){
                 let arr = Array.from(num);
-                if(arr[0] % 2 == 0){
-                    alert(`${arr[0]}` + " is EVEN");
-                }else{
-                    alert(`${arr[0]}` + " is ODD");
-                }
+                let x = arr[0] % 2 == 0;
+                var list = arr.filter(newList => x ? newList % 2 == 0 : newList % 2 != 0);
+                alert(list);
             }else{
                 alert("NOT A NUMBER");
             }
