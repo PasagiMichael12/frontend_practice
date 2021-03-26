@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bookPage">
+        <h1>Book Archivesaaa</h1>
+    </div>
+
+
+
+
+
+    <script>
+        var books = [
+      {
+        title: 'The Design of EveryDay Things',
+        author: 'Don Norman',
+        alreadyRead: false
+      },
+      {
+        title: 'The Most Human Human',
+        author: 'Brian Christian',
+        alreadyRead: true
+      },
+      {
+        title: 'Her',
+        author: 'ad lorem',
+        alreadyRead: true
+      },
+      {
+        title: 'asira',
+        author: 'uknown',
+        alreadyRead: false
+      }
+    ];
+    var bookPage = document.getElementById("bookPage");
+    for(let x = 0; x < books.length; x++){
+        
+        var tag = document.createAttribute("p");
+        var content = document.createTextNode(`${books.title}` + "by" + `${books.author}`);
+        tag.appendChild(content);
+        bookPage.appendChild(tag);
+       
+    };
+    </script>
+</body>
+</html>
