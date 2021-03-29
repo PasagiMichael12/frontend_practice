@@ -57,3 +57,12 @@ btn.addEventListener("click", function(e){
 
 .childNodes - list out the main tags on the selected element block
 .nodeName
+
+.appendChild() - sticks the child node for html element
+.append() - append the mother child of the element
+.remove() - delete specified element
+.replaceChild() - replace/overwrite an element
+.innerHTML() - html tag
+.innerText() - content inside HTML tag
+.prepend() - at the beginning
+.setAttribute() - adds or create a new attribute for an html element
