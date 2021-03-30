@@ -68,6 +68,11 @@
       // heading.appendChild(count);
       // document.body.appendChild(heading);
       
+      //#5
+      var p = document.getElementById("paragraph");
+      var paragraph = document.getElementById("paragraph").innerText;
+      p.innerText = paragraph.replace(/\?/g, '*').replace(/\!/g, '&');
+      
     </script>
   </body>
 </html>
