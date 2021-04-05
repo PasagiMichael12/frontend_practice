@@ -11,7 +11,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body">
     <p id="paragraph">
       Hey, you're not permitted in there. It's restricted. You'll be deactivated
       for sure.. Don't call me a mindless philosopher, you overweight glob of
@@ -63,11 +63,14 @@
       
 
       //#4
+      var body = document.getElementById("body");
       var wordCount = document.getElementById("paragraph").innerText.split(" ");
-      var heading = document.createElement('h1');
+      var newP = document.createElement('p');
       var count = document.createTextNode(wordCount.length);
-      heading.appendChild(count);
-      document.body.appendChildNode[0](heading);
+      newP.appendChild(count);
+      body.insertBefore(newP, body.firstChild);
+
+
       
       //#5
       // var p = document.getElementById("paragraph");

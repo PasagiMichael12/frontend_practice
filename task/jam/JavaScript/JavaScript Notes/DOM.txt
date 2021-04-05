@@ -75,3 +75,4 @@ change css property using javascript
 if a css property is used as 
 ex. style="background-color: blue;"; ----> .style.backgroundColor = blue;
 style="color: blue;"; ----> .style.color = blue;
+
