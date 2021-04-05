@@ -60,18 +60,19 @@
       //   line.appendChild(sentenceLine);
       //   document.body.appendChild(line);
       // });
+      
 
       //#4
-      // var wordCount = document.getElementById("paragraph").innerText.split(" ");
-      // var heading = document.createElement('h1');
-      // var count = document.createTextNode(wordCount.length);
-      // heading.appendChild(count);
-      // document.body.appendChild(heading);
+      var wordCount = document.getElementById("paragraph").innerText.split(" ");
+      var heading = document.createElement('h1');
+      var count = document.createTextNode(wordCount.length);
+      heading.appendChild(count);
+      document.body.appendChildNode[0](heading);
       
       //#5
-      var p = document.getElementById("paragraph");
-      var paragraph = document.getElementById("paragraph").innerText;
-      p.innerText = paragraph.replace(/\?/g, '*').replace(/\!/g, '&');
+      // var p = document.getElementById("paragraph");
+      // var paragraph = document.getElementById("paragraph").innerText;
+      // p.innerText = paragraph.replace(/\?/g, '*').replace(/\!/g, '&');
       
     </script>
   </body>

@@ -1,6 +1,8 @@
 DOM - Document Object Model
 allows to manipulate html document
 loads once the page loads
+-collection of nodes/hierarchy
+every element of dom is an object
 
 elements of html represented by javascript as object
 every element is an element object
@@ -52,7 +54,7 @@ this is similar to the above example
 btn.addEventListener("click", function(e){
     action here...
 });
-.querySelector - accesses the first element 
+.querySelector - accesses the first element only return the 1st element that matches the soecified selector
 .querySelectorAll - access all element and throw it as an array
 
 .childNodes - list out the main tags on the selected element block
@@ -62,7 +64,14 @@ btn.addEventListener("click", function(e){
 .append() - append the mother child of the element
 .remove() - delete specified element
 .replaceChild() - replace/overwrite an element
-.innerHTML() - html tag
+.innerHTML() - html tag returns htmkl content of an element including the tags/attr and text node
 .innerText() - content inside HTML tag
 .prepend() - at the beginning
 .setAttribute() - adds or create a new attribute for an html element
+.textContent() - list all values under the list document element
+
+
+change css property using javascript
+if a css property is used as 
+ex. style="background-color: blue;"; ----> .style.backgroundColor = blue;
+style="color: blue;"; ----> .style.color = blue;
