@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form name="registrationForm" onsubmit="return validate()">
+        <div class="container">
+            <center>
+                <h1>Registration Form</h1>
+            </center>
+            <hr />
+            <label> First Name </label>
+            <input type="text" name="fname" placeholder="First Name" id="fname" size="15" required />
+            <br />
+            <label> Last Name: </label>
+            <input type="text" name="lname" placeholder="Last Name" id="lname" size="15" required />
+            <br />
+            <label> Username : </label>
+            <input type="text" name="uname" placeholder="Username" id="uname" size="15" required />
+            <br />
+            <label> Birth Date : </label>
+            <input type="date" name="bdate" id="bdate" required />
+            <br />
+            <label> Phone : </label>
+            <input type="text" name="phone" placeholder="+639123456789" id="phone" size="10" required />
+            <br />
+            <label> Current Address : </label>
+            <input type="text" name="address" placeholder="Address" id="address" size="15" required />
+            <br />
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email" id="email" required />
+            <br />
+            <label for="p1">Password</label>
+            <input type="password" name="p1" placeholder="Password" id="p1" required />
+            <br />
+            <label for="p2">Confirm Password</label>
+            <input type="password" name="p2" placeholder="Confirm Password" id="p2" required />
+            <br />
+            <input type="submit" name="register" id="register" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
