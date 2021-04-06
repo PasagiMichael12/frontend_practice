@@ -54,9 +54,10 @@ const dishes = {
 //Displaying Table from objects
 const tableId = document.querySelector('#dish');
 const user = prompt('Enter your Name');
+
 const generateColumn = () => {
     const dishesColumns = dishes.column.map(dish => {
-        return `<thead style = 'background-color:black; color:white;'><tr><th> ${dish.code} </th>\n<th> ${dish.name}</th>\n<th> ${dish.item_description} </th>\n<th> ${dish.type} </th></tr><thead>`;
+        return `<thead style = 'background-color:black; color:white;'><tr><th>${dish.code}</th>\n<th> ${dish.name}</th>\n<th> ${dish.item_description} </th>\n<th> ${dish.type} </th></tr><thead>`;
     })
     tableId.innerHTML = dishesColumns;
 }
@@ -65,7 +66,7 @@ const tbody = document.createElement('tbody');
 tableId.append(tbody);
 const generateData = () => {
     const dishesRow = dishes.data.map(dish => {
-        return `<tr><td>${dish.code}</td><td>${dish.name}</td><td>${dish.item_description}</td><td>${dish.type}</td></tr>`;
+        return `<tr><td><a onclick="linkCode(this)">${dish.code}</a></td><td>${dish.name}</td><td>${dish.item_description}</td><td>${dish.type}</td></tr>`;
     })
     tbody.innerHTML = dishesRow.join('');
 }
@@ -73,7 +74,14 @@ generateData();
 //Displaying Table from objects
 
 //////////////////////////////////////////////////////////////
-
+const linkCode = (e) => {
+    const getDish = document.querySelector('#dishCode');
+    getDish.value = e.innerText.toString();
+    const dish = dishes.data.filter(food => {
+        return food.code === getDish.value ? food.name : false;
+    });
+    main_dish.value = dish[0].name;
+}
 
 const main_dish = document.querySelector('#mainDish');
 const getCode = (code) => {
