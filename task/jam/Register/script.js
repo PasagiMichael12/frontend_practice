@@ -1,19 +1,5 @@
-function dataValidate() {
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
-    var uname = document.getElementById("uname").value;
-    var bdate = document.getElementById("bdate").value;
-    var phone = document.getElementById("phone").value;
-    var address = document.getElementById("address").value;
-    var email = document.getElementById("email").value;
-
-    alert("Registered Successfully. \n\nFirst Name: " + fname + "\nLast Name: " + lname + "\nUsername: " + uname
-        + "\nBirthdate: " + bdate + "\nPhone Number: " + phone + "\nAddress: " + address + "\nEmail: " + email);
-}
 var emailRx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-
-// var btn = document.getElementById("register");
 function validate(){
     if((document.getElementById("fname").value !== "" && document.getElementById("lname").value !== "") 
     && (document.getElementById("uname").value !== "" && document.getElementById("bdate").value !== "")
@@ -38,4 +24,16 @@ function validate(){
     } else {
         document.getElementById("errPassword").innerHTML = "";
     }
+}
+
+function resultValidate() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var uname = document.getElementById("uname").value;
+    var bdate = document.getElementById("bdate").value;
+    var address = document.getElementById("address").value;
+    var email = document.getElementById("email").value;
+
+    alert("Registered Successfully. \n\nFirst Name: " + fname + "\nLast Name: " + lname + "\nUsername: " + uname
+        + "\nBirthdate: " + bdate + "\nAddress: " + address + "\nEmail: " + email);
 }
