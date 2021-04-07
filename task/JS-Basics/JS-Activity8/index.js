@@ -53,6 +53,8 @@ const dishes = {
 }
 //Displaying Table from objects
 const tableId = document.querySelector('#dish');
+
+
 const generateColumn = () => {
     const dishesColumns = dishes.column.map(dish => {
         return `<thead style = 'background-color:black; color:white;'><tr><th>${dish.code}</th>\n<th> ${dish.name}</th>\n<th> ${dish.item_description} </th>\n<th> ${dish.type} </th></tr><thead>`;
@@ -70,9 +72,12 @@ const generateData = () => {
 }
 generateData();
 //Displaying Table from objects
+//reset button
+
+
 
 //////////////////////////////////////////////////////////////
-const linkCode = (e) => { //getting code by clicking
+const linkCode = (e) => {
     const getDish = document.querySelector('#dishCode');
     getDish.value = e.innerText.toString();
     const dish = dishes.data.filter(food => {
@@ -81,8 +86,8 @@ const linkCode = (e) => { //getting code by clicking
     main_dish.value = dish[0].name;
 }
 
-const getCode = (code) => { //putting value on dish textbox
-    const main_dish = document.querySelector('#mainDish');
+const main_dish = document.querySelector('#mainDish');
+const getCode = (code) => {
     const dish = dishes.data.filter(food => {
         return food.code === code.value ? food.name : false;
     });
@@ -90,7 +95,7 @@ const getCode = (code) => { //putting value on dish textbox
 }
 //Displaying receipt
 const getReceipt = () => {
-    const customer = prompt('Enter your Name');
+    const customer = prompt("Enter your Name: ");
     const getDish = document.querySelector('#dishCode');
     const dish = dishes.data.filter(food => {
         return food.code === getDish.value ? food.name : false;
@@ -99,10 +104,16 @@ const getReceipt = () => {
     let getDrinks = document.querySelector('#drinks').options[document.querySelector('#drinks').selectedIndex].value;
 
     const receipt = document.querySelector('#receipt');
+    document.querySelector('#resetBtn').addEventListener('click', () => {
+        receipt.innerHTML = '';
+        document.querySelector('#checkOut').disabled = false;
+    })
     alert(`Name:${customer}\nMain Dish: ${dish[0].name}\nRice: ${getRice}\nDrinks: ${getDrinks}`);
     receipt.innerHTML = `<p>Name: ${customer}</p>\n<p>Main Dish:${dish[0].name}</p>\n<p>Rice: ${getRice}</p>\n<p>Drinks: ${getDrinks}</p>`;
 
-
+    document.querySelector('#checkOut').addEventListener('click', () => {
+        alert('Order placed, Preparing your order...');
+        document.querySelector('#checkOut').disabled = true;
+    })
 }
-
 

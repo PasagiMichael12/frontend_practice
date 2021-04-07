@@ -103,13 +103,16 @@
       </table>
     </div>
     <div class="container d-flex">
-      <div class="card col-7 m-1">
+      <div class="card col-7">
         <div class="card-header">
           Order Now! ***(Just by clicking or typing the Code)***
         </div>
         <div class="card-body">
           <h5 class="card-title">Place your Order:</h5>
           <form class="form-control">
+            <button id="resetBtn" type="reset" class="btn btn-warning">New
+              Customer</button>
+            <hr>
             <div class="row">
               <div class="mb-3 input-group">
                 <div class="col-5 m-2">
@@ -146,14 +149,14 @@
         </div>
       </div>
 
-      <div class="card col-5 m-1">
+      <div class="card col-5">
         <div class="card-header">
           Your Order:
         </div>
         <div class="card-body">
           <h5 class="card-title">Receipt:</h5>
           <p id="receipt"></p>
-          <a class="btn btn-primary">Check Out</a>
+          <button id="checkOut" class="btn btn-primary">Check Out</button>
         </div>
       </div>
     </div>
