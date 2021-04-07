@@ -35,14 +35,14 @@
             <br />
             <label for="email">Email</label>
             <input type="text" name="email" placeholder="Email" id="email" oninput="validate()" required />
-            <br />
+            <span><p id="errEmail"></p></span>
             <label for="p1">Password</label>
             <input type="password" name="p1" placeholder="Password" id="p1" oninput="validate()" required />
             <br />
             <label for="p2">Confirm Password</label>
             <input type="password" name="p2" placeholder="Confirm Password" id="p2" oninput="validate()" required />
-            <br />
-            <button type="submit" name="register" id="register" disabled>Register</button>
+            <span><p id="errPassword"></p></span>
+            <input type="submit" name="register" id="register" onclick="return dataValidate()" value="Register" disabled>
         </div>
     </form>
 </body>
