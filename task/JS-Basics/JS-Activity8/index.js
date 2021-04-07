@@ -53,8 +53,6 @@ const dishes = {
 }
 //Displaying Table from objects
 const tableId = document.querySelector('#dish');
-const user = prompt('Enter your Name');
-
 const generateColumn = () => {
     const dishesColumns = dishes.column.map(dish => {
         return `<thead style = 'background-color:black; color:white;'><tr><th>${dish.code}</th>\n<th> ${dish.name}</th>\n<th> ${dish.item_description} </th>\n<th> ${dish.type} </th></tr><thead>`;
@@ -74,7 +72,7 @@ generateData();
 //Displaying Table from objects
 
 //////////////////////////////////////////////////////////////
-const linkCode = (e) => {
+const linkCode = (e) => { //getting code by clicking
     const getDish = document.querySelector('#dishCode');
     getDish.value = e.innerText.toString();
     const dish = dishes.data.filter(food => {
@@ -83,8 +81,8 @@ const linkCode = (e) => {
     main_dish.value = dish[0].name;
 }
 
-const main_dish = document.querySelector('#mainDish');
-const getCode = (code) => {
+const getCode = (code) => { //putting value on dish textbox
+    const main_dish = document.querySelector('#mainDish');
     const dish = dishes.data.filter(food => {
         return food.code === code.value ? food.name : false;
     });
@@ -92,7 +90,7 @@ const getCode = (code) => {
 }
 //Displaying receipt
 const getReceipt = () => {
-    const customer = user;
+    const customer = prompt('Enter your Name');
     const getDish = document.querySelector('#dishCode');
     const dish = dishes.data.filter(food => {
         return food.code === getDish.value ? food.name : false;
@@ -103,6 +101,7 @@ const getReceipt = () => {
     const receipt = document.querySelector('#receipt');
     alert(`Name:${customer}\nMain Dish: ${dish[0].name}\nRice: ${getRice}\nDrinks: ${getDrinks}`);
     receipt.innerHTML = `<p>Name: ${customer}</p>\n<p>Main Dish:${dish[0].name}</p>\n<p>Rice: ${getRice}</p>\n<p>Drinks: ${getDrinks}</p>`;
+
 
 }
 
