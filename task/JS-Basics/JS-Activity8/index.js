@@ -92,6 +92,7 @@ const getCode = (code) => {
         return food.code === code.value ? food.name : false;
     });
     main_dish.value = dish[0].name;
+    
 }
 //Displaying receipt
 const getReceipt = () => {
