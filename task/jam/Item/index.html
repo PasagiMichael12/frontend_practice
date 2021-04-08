@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Item</title>
-
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="validateValues()">
     <form>
       <label>Enter a code: </label>
-      <select name="items" id="items" required>
+      <select name="items" id="items" onselect="validateValues()" required>
         <option value="">-- -</option>
-        <option value="table">T - Table</option>
-        <option value="chair">C - Chair</option>
-        <option value="printer">P - Printer</option>
-        <option value="photocopier">x - Photocopier</option>
+        <option value="Table">T - Table</option>
+        <option value="Chair">C - Chair</option>
+        <option value="Printer">P - Printer</option>
+        <option value="Photocopier">x - Photocopier</option>
       </select>
       <br />
       <label>Enter your name: </label>
-      <input type="text" name="name" placeholder="Your Name" id="name" size="15" required />
-      <br /> 
-      <button type="button" name="submit" id="submit" onclick="return onSubmit()">Submit</button>
+      <input type="text" name="name" placeholder="Your Name" id="name" size="15" oninput="validateValues()" required />
+      <br />
+      <button type="button" name="submit" id="submit" onclick="return onSubmit()" disabled>Submit</button>
       <span><p id="print"></p></span>
     </form>
   </body>
