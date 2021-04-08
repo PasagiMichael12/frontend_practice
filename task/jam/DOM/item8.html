@@ -11,7 +11,8 @@
       }
     </style>
   </head>
-  <body id="body">
+  <body>
+    <span><p id="count"></p></span>
     <p id="paragraph">
       Hey, you're not permitted in there. It's restricted. You'll be deactivated
       for sure.. Don't call me a mindless philosopher, you overweight glob of
@@ -37,7 +38,7 @@
       you'll hurry aboard we'll get out of here. Hello, sir. Which way? All
       right, men. Load your weapons! Stop that ship! Blast 'em! Chewie, get us
       out of here! Oh, my. I'd forgotten how much I hate space travel. Run,
-      Luke! Run! <a href="https://allon.com/">Link here!</a>
+      Luke! Run!
     </p>
 
     <script>
@@ -51,32 +52,32 @@
 
       // p.innerHTML = joinedWords;
 
+      // #2
+      // var link = document.createElement("a");
+      // link.innerText = "google.com"
+      // link.href = "https://www.google.com/";
+      // document.getElementById("paragraph").append(link);
 
       //#3
-      // var paragraph = document.getElementById("paragraph").innerText.split(".");
+      // var paragraph = document.getElementById("paragraph").innerText.split(/\.[^./]/);
+      
       // paragraph.forEach(sentence => {
       //   var line = document.createElement('p');
       //   var sentenceLine = document.createTextNode(sentence);
       //   line.appendChild(sentenceLine);
       //   document.body.appendChild(line);
       // });
-      
 
       //#4
-      var body = document.getElementById("body");
-      var wordCount = document.getElementById("paragraph").innerText.split(" ");
-      var newP = document.createElement('p');
-      var count = document.createTextNode(wordCount.length);
-      newP.appendChild(count);
-      body.insertBefore(newP, body.firstChild);
+      // var wordCount = document.getElementById("paragraph").innerText.split(" ");
+      // var heading = document.createElement('h1');
+      // var countnum = wordCount.length;
+      // document.getElementById("count").innerText = countnum;
 
-
-      
       //#5
       // var p = document.getElementById("paragraph");
       // var paragraph = document.getElementById("paragraph").innerText;
       // p.innerText = paragraph.replace(/\?/g, '*').replace(/\!/g, '&');
-      
     </script>
   </body>
 </html>
