@@ -1,0 +1,38 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto, sans-serif;
+}
+
+#header_id {
+   margin: 0;
+   padding: 0;
+   background-image: url(../images/header_img.jpg);
+   background-size: cover;
+   min-height: 100vh;
+   background-attachment: fixed;
+}
+
+#phrase {
+   color: white;
+}
+
+.setHeight {
+   min-height: 100vh;
+}
+
+.setPhrase {
+   margin-left: 10% !important;
+}
+
+.bg {
+   background-color: rgb(17, 255, 243);
+   min-height: 70vh;
+}
+.orange {
+   color: orangered;
+}
+section {
+   min-height: 70vh;
+}
