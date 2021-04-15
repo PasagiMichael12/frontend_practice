@@ -4,35 +4,34 @@ body {
    box-sizing: border-box;
    font-family: Roboto, sans-serif;
 }
-
+/* header and nav section */
 #header_id {
    margin: 0;
    padding: 0;
-   background-image: url(../images/header_img.jpg);
+   background-image: url(../images/mockup.jpg);
    background-size: cover;
-   min-height: 100vh;
+   min-height: 80vh;
    background-attachment: fixed;
+   color: #fff;
 }
+/* header and nav section */
 
-#phrase {
-   color: white;
+/* section item # 1*/
+.lightBgColor {
+   background-color: #fbfbfb;
 }
+/* section item # 1*/
 
-.setHeight {
-   min-height: 100vh;
+/* section item # 2*/
+.item2Pic {
+   height: 100%;
+   width: 100%;
+   overflow: visible;
 }
-
-.setPhrase {
-   margin-left: 10% !important;
+.item2 {
+   background-color: #093c72;
+   min-height: 60vh;
+   background-attachment: fixed;
+   padding-top: 5%;
 }
-
-.bg {
-   background-color: rgb(17, 255, 243);
-   min-height: 70vh;
-}
-.orange {
-   color: orangered;
-}
-section {
-   min-height: 70vh;
-}
+/* section item # 2*/
