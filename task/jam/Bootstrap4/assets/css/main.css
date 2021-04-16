@@ -25,13 +25,50 @@ body {
     
 }
 
-.picsAbt{
-  background: url(../images/about.png);
-  height: 100vh;
-
+.imgabout{
+  width: 660px; 
+  height: 625px;
+  object-fit: cover;
 }
 
 .about{
-  background-color: royalblue;
+  background-color: #ff9933;
   height: 100vh;
+}
+
+.skillshd{
+  color: #ff7f00;
+}
+
+.fab{
+  color: #ff7f00;
+}
+.me{
+  color: #e25822;
+}
+
+.proj{
+  width: 250px; 
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body{
+  text-align: left;
+}
+
+#fback{
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/feedback.jpg);
+  background-size: cover;
+  height: 50vh;
+  background-position: center;
+}
+
+.vh-50{
+  height: 50vh;
+
+}
+
+.rs{
+  color: #ff7f00;
 }
