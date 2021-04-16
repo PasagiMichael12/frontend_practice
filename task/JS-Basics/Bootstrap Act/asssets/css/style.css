@@ -27,8 +27,8 @@ body {
    font-size: 70%;
 }
 .item2Pic {
-   height: 100%;
-   width: 100%;
+   background-image: url(../images/bicol.jpg);
+   background-size: cover;
 }
 .item2 {
    background-color: #093c72;
@@ -56,3 +56,7 @@ body {
    color: white;
 }
 /* section item # 5*/
+.footerBg {
+   background-color: royalblue;
+   height: 30vh;
+}
