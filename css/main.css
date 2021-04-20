@@ -1,0 +1,50 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 1rem;
+   font-family: 'Montserrat', sans-serif;
+}
+/*Header and header image*/
+.gradient {
+   background: rgb(55, 0, 255);
+   background: linear-gradient(
+      90deg,
+      rgba(55, 0, 255, 1) 0%,
+      rgba(251, 172, 0, 1) 100%
+   );
+   padding-top: 10%;
+   width: 100%;
+}
+.picSize {
+   height: 30%;
+   width: 70%;
+}
+.phrase {
+   font-size: 2.25rem;
+}
+/*Header and header image*/
+/*----First Section About Me------*/
+container-layout {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.picContainer {
+   background: tomato;
+   height: 22rem;
+   width: 22rem;
+   border-radius: 11rem;
+   padding: 15px;
+}
+.aboutPicture {
+   height: 20rem;
+   width: 20rem;
+   border-radius: 10rem;
+}
+.icons {
+   margin-left: 20%;
+   padding-top: 1%;
+}
+
+/*----First Section About Me------*/
