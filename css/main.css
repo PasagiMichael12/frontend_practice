@@ -24,12 +24,7 @@ body {
    font-size: 2.25rem;
 }
 /*Header and header image*/
-/*----First Section About Me------*/
-container-layout {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+/*---- Section About Me------*/
 .picContainer {
    background: tomato;
    height: 22rem;
@@ -42,9 +37,14 @@ container-layout {
    width: 20rem;
    border-radius: 10rem;
 }
-.icons {
-   margin-left: 20%;
-   padding-top: 1%;
+/*---- Section About Me------*/
+/*---- Section Skills------*/
+.skillContainerLayout {
+   background-color: #5000ca;
+   height: 90vh;
+   width: 100%;
 }
-
-/*----First Section About Me------*/
+.skillPicture {
+   height: 30vh;
+}
+/*---- Section Skills------*/
