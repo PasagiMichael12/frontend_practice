@@ -3,3 +3,27 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+nav {
+  background-color: black;
+}
+header {
+  height: 100vh;
+}
+hr {
+  width: 50%;
+  background-color: black;
+  height: 1px;
+}
+#about {
+  height: 100vh;
+}
+.align-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#skills{
+  height: 38vh;
+}
+#contactme{
+  height: 100vh;
+}
