@@ -7,7 +7,8 @@ nav {
   background-color: black;
 }
 header {
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 45px 0 0 0;
 }
 hr {
   width: 50%;
@@ -15,15 +16,19 @@ hr {
   height: 1px;
 }
 #about {
-  height: 100vh;
+  /* height: 100vh; */
 }
 .align-vertical {
   margin-top: auto;
   margin-bottom: auto;
 }
 #skills{
-  height: 38vh;
+  /* height: 38vh; */
 }
 #contactme{
-  height: 100vh;
+  /* height: 80vh; */
+}
+.image{
+  height: 70%;
+  width: 30%;
 }
