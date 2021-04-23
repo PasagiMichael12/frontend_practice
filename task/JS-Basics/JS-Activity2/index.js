@@ -25,6 +25,7 @@ Triangle.prototype = shape;
 shape.getPerimiterOfTriangle = function(){
     return this.a + this.b + this.c;
 }
+//asdasd
 
 //shape object inherited the data inside the triangle which is a b c type
 let tria = new Triangle(1,2,3);
