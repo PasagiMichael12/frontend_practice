@@ -21,9 +21,7 @@
   </head>
   <body>
     <button id="generate">Generate</button>
-    <ul id="ulist">
-
-    </ul>
+    <ul id="ulist"></ul>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -50,23 +48,23 @@
             type: "GET",
             datatype: "json/application",
             success: function (data) {
+              
+            //     var names = [data[0].name, data[1].name, data[2].name];
 
-            //   var names = [data[0].name, data[1].name, data[2].name];
-            //   var likes = [data[0].foods.likes[0]];
+            //   $.each(names, function (i) {
+            //     $("#ulist").append("<li>" + names[i] + "</li>");
+            //   });
 
+              $(data).each(function (i, value) {
 
-                $(data).each(function(i, value){
-                    $("#ulist").append(
-                        "<li>"+value.name + " loves " + value.foods.likes  +"</li>"
-                    );
-                })
-
-
-
+                $("#ulist").append(
+                  "<li>" + value.name + " loves " + value.foods.likes + "</li>"
+                );
+              });
             },
             error: function () {
               alert("error");
-            }
+            },
           });
         });
       });
