@@ -47,11 +47,10 @@
                     type: 'get',
                     dataType: 'json',
                     success: function (data) {
-                        console.log('Success!');
+                        console.log(data);
                         $(data).each(function (index, value) {
                             $('#obj').append(`<li> ${value.name} </li>`)
                         })
-
                         $(data).each(function (index, value) {
                             $('#phrase').append(`<li>${value.name} likes ${value.foods.likes.length == 2 ? value.foods.likes[0] + ' and ' + value.foods.likes[1] : value.foods.likes}  </li >`);
                         })
@@ -61,7 +60,6 @@
                     }
                 })
             })
-
         });
     </script>
 </body>
