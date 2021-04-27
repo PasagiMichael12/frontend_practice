@@ -17,44 +17,61 @@
 </head>
 
 <body>
-
-  <div class="input-group mb-3 text-center">
-    <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon2"
-      id="city" />
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button" id="generate">Check!</button>
+  <div class="container-fluid">
+    <div class="row mt-4 pt-3 center-block text-center">
+      <div class="col">
+        <h1>Weather Weather</h1>
+        <h1>Chicken Dinner!</h1>
+      </div>
     </div>
-  </div>
-  <div class="padding">
-    <div class="col-lg-6">
-      <div class="card">
-        <img class="" src="asset/images/weather.png" alt="Card image cap" />
-        <div class="card-img-overlay" style="height: 110px">
-          <h3 class="card-title text-white m-b-0 dl" id="cityName">-- ---</h3>
-          <small class="card-text text-white font-light" id="geolocation"></small>
+    <div class="row mt-3">
+      <div class="col">
+        <div class="input-group mb-3 center-block">
+          <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon2"
+            id="city" />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="generate">Check!</button>
+          </div>
+          
         </div>
-        <div class="card-body weather-small">
-          <div class="row">
-            <div class="col-8 b-r align-self-center">
-              <div class="d-flex">
-                <div class="display-6 text-info">
-                  <i class="mdi mdi-weather-pouring"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="padding center-block">
+          <div class="card">
+            <img class="" src="asset/images/weather.png" alt="Card image cap" />
+            <div class="card-img-overlay" style="height: 110px">
+              <h3 class="card-title text-white m-b-0 dl" id="cityName">-- ---</h3>
+              <small class="card-text text-white font-light" id="geolocation"></small>
+            </div>
+            <div class="card-body weather-small">
+              <div class="row">
+                <div class="col-8 b-r align-self-center">
+                  <div class="d-flex">
+                    <div class="display-6 text-info">
+                      <i class="mdi mdi-weather-pouring"></i>
+                    </div>
+                    <div class="m-l-20">
+                      <h1 class="font-light text-info m-b-0" id="temp">--</h1>
+                      <small id="desc">-- --- --</small>
+                    </div>
+                  </div>
                 </div>
-                <div class="m-l-20">
-                  <h1 class="font-light text-info m-b-0" id="temp">--</h1>
-                  <small id="desc">-- --- --</small>
+                <div class="col-4 text-center">
+                  <h1 class="font-light m-b-0" id="year">----</h1>
+                  <small id="date">- --</small>
                 </div>
               </div>
             </div>
-            <div class="col-4 text-center">
-              <h1 class="font-light m-b-0" id="year">----</h1>
-              <small id="date">- --</small>
-            </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
+
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -66,6 +83,27 @@
   <script src="asset/js/main.js"></script>
   <script>
     $(document).ready(function () {
+      var month = new Array();
+      month[0] = "January";
+      month[1] = "February";
+      month[2] = "March";
+      month[3] = "April";
+      month[4] = "May";
+      month[5] = "June";
+      month[6] = "July";
+      month[7] = "August";
+      month[8] = "September";
+      month[9] = "October";
+      month[10] = "November";
+      month[11] = "December";
+
+      var d = new Date();
+      var month = month[d.getMonth()];
+      var day = d.getDate();
+      var year = d.getFullYear();
+
+      $("#year").text(year);
+      $("#date").text(month + " " + day);
       $("#generate").click(function () {
         let url = "http://api.openweathermap.org/data/2.5/weather?q=";
         let token = "&appid=14c7e3329c0a2fd5fd361115a1015690";
@@ -89,31 +127,12 @@
               });
               $("#desc").text(value.weather[0].description);
 
-              var month = new Array();
-              month[0] = "January";
-              month[1] = "February";
-              month[2] = "March";
-              month[3] = "April";
-              month[4] = "May";
-              month[5] = "June";
-              month[6] = "July";
-              month[7] = "August";
-              month[8] = "September";
-              month[9] = "October";
-              month[10] = "November";
-              month[11] = "December";
 
-              var d = new Date();
-              var month = month[d.getMonth()];
-              var day = d.getDate();
-              var year = d.getFullYear();
-
-              $("#year").text(year);
-              $("#date").text(month + " " + day);
             });
           },
           error: function (error) {
-            alert("error");
+            alert("Invalid City. Please try again.");
+           
           },
         });
       });
