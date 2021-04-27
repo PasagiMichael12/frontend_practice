@@ -52,7 +52,7 @@
                     success: function (data) {
 
                         $('#weather').append(`<li>${data.coord.lat}</li>`)
-                        $('#weather').append(`<li>${data.coord.lon}</li>`)
+                        $('#weather').append(`<li class="text-warning" >${data.coord.lon}</li>`)
                         console.log(data.coord);
                         // $(data).each(function (index, value) {
                         //     //coord
