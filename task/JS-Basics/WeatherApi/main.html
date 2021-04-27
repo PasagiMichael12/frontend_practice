@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="main.html">Forecast City</a>
@@ -57,20 +57,50 @@
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md">
           <form class="form-control">
-            <input class="form-control m-1" type="text" placeholder="Name Of City">
+            <input class="form-control m-1" type="text" placeholder="Name Of City" id="city">
             <div class="m-1">
-              <button class="btn btn-danger">Celcius</button>
-              <button class="btn btn-warning">Farenheit</button>
-              <button class="btn btn-primary">Forecast</button>
+              <button class="btn btn-danger" id="celcius">Celcius</button>
+              <button class="btn btn-warning" id="farenheit">Farenheit</button>
+              <button class="btn btn-primary" id="forecast">Forecast</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="row py-3">
-        <div class="col">
-          <div class="card">
-
-          </div>
+      <div class="row py-3 mt-5 text-center">
+        <div class="col-md-12 col-sm-12 text-white">
+          <h1 id="cityPlace">Manila, Philippines</h1>
+        </div>
+      </div>
+      <div class="row py-3 mt-5 text-center">
+        <div class="col-md-6 col-sm-12 text-white">
+           <!-- celsius -->
+           <label for="temp">Temperature </label>
+           <p id="temp">29°C</p>
+           <!-- clouds, sunny -->
+           <label for="main">Status </label>
+           <p id="main">Clouds</p>
+           <!--  -->
+           <label for="humidity">Humidity </label>
+           <p id="humidity">70h</p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <!-- broken clouds, sunny -->
+          <label for="description">Description </label>
+          <p id="description">Broken Clouds</p>
+          <!--  -->
+          <label for="temp-min">Temperature min </label>
+          <p id="temp-min">27°C</p>
+          <!--  -->
+          <label for="temp-max">Temperature max </label>
+          <p id="temp-max">31°C</p>
+          <!--  -->
+          <label for="speed">Speed </label>
+          <p id="speed">5.14km/h</p>
+          <!-- long, lat -->
+          <p id="geolocation">long: 120.9822, lat: 14.6042</p>
+          <!--  -->
+          <label for="timezone">Timezone </label>
+          <p id="timezone">-08:00</p>
         </div>
       </div>
     </div>
@@ -93,7 +123,7 @@
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-
+  <script src="asset/js/main.js"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
