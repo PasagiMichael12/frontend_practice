@@ -54,22 +54,22 @@
                         $('#weather').append(`<li>${data.coord.lat}</li>`)
                         $('#weather').append(`<li>${data.coord.lon}</li>`)
                         console.log(data.coord);
-                        // $(data).each(function (index, value) {
-                        //     //coord
-                        //     $('#weather').append(`<li>${value.coord.lon}</li>`)
-                        //     $('#weather').append(`<li>${value.coord.lat}</li>`)
-                        //     //Weather
-                        //     $('#weather').append(`<li>${value.weather[0].id}</li>`)
-                        //     $('#weather').append(`<li>${value.weather[0].main}</li>`)
-                        //     $('#weather').append(`<li>${value.weather[0].description}</li>`)
-                        //     $('#weather').append(`<li>${value.weather[0].icon}</li>`)
-                        //     //base
-                        //     $('#weather').append(`<li>${value.base}</li>`)
-                        //     //main
-                        //     $(data.main).each(function (index, value) {
-                        //         $('#weather').append(`<li>${value.temp}</li>`)
-                        //     })
-                        // })
+                        $(data).each(function (index, value) {
+                            //coord
+                            $('#weather').append(`<li>${value.coord.lon}</li>`)
+                            $('#weather').append(`<li>${value.coord.lat}</li>`)
+                            //Weather
+                            $('#weather').append(`<li>${value.weather[0].id}</li>`)
+                            $('#weather').append(`<li>${value.weather[0].main}</li>`)
+                            $('#weather').append(`<li>${value.weather[0].description}</li>`)
+                            $('#weather').append(`<li>${value.weather[0].icon}</li>`)
+                            //base
+                            $('#weather').append(`<li>${value.base}</li>`)
+                            //main
+                            $(data.main).each(function (index, value) {
+                                $('#weather').append(`<li>${value.temp}</li>`)
+                            })
+                        })
                     },
                     error: function (error) {
                         alert('error');
