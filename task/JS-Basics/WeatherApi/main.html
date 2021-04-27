@@ -42,7 +42,7 @@
           <div class="card">
             <img class="" src="asset/images/weather.png" alt="Card image cap" />
             <div class="card-img-overlay" style="height: 110px">
-              <h3 class="card-title text-white m-b-0 dl" id="cityName">-- ---</h3>
+              <h3 class="card-title text-white m-b-0 dl" id="cityName">-- ---</h3><br />
               <small class="card-text text-white font-light" id="geolocation"></small>
             </div>
             <div class="card-body weather-small">
@@ -98,7 +98,7 @@
       month[11] = "December";
 
       var d = new Date();
-      var month = month[d.getMonth()];
+      month = month[d.getMonth()];
       var day = d.getDate();
       var year = d.getFullYear();
 
@@ -115,7 +115,7 @@
           type: "get",
           dataType: "json",
           success: function (data) {
-            $("#cityName").text(city);
+            // $("#cityName").text(city);
             $("#geolocation").text(
               `${data.coord.lon}` + ` , ${data.coord.lat}`
             );
@@ -123,10 +123,10 @@
             $(data).each(function (index, value) {
               $(data.main).each(function (index, value) {
                 var temp = value.temp;
-                $("#temp").text(temp.toFixed(0)).append("<sup>o</sup>");
+                $("#temp").text(temp.toFixed(0)).append("<sup>°C</sup>");
               });
               $("#desc").text(value.weather[0].description);
-
+              $("#cityName").text(city + value.sys[0].country);
 
             });
           },
