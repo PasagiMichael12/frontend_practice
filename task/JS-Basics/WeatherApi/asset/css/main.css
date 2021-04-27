@@ -13,3 +13,14 @@
 .containerSize {
    min-height: 50vh;
 }
+label {
+   font-size: 1.5rem;
+}
+p {
+   font-size: 2rem;
+   text-shadow: 2px 2px #000;
+}
+#cityPlace {
+   font-size: 3rem;
+   text-shadow: 2px 2px #000;
+}

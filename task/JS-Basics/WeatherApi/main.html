@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Weather2x Chicken Dinner Forecast</a>
+        <a class="navbar-brand" href="#">WWCDF</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,8 +36,8 @@
                 Settings
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item">Celcius </a></li>
-                <li><a class="dropdown-item">Farenheit</a></li>
+                <li><a class="dropdown-item" id="celcius">Celcius </a></li>
+                <li><a class="dropdown-item" id="farenheit">Farenheit</a></li>
                 <li><a class="dropdown-item">Dark Theme</a></li>
               </ul>
             </li>
@@ -51,56 +51,68 @@
     <div class="container containerSize">
       <div class="row text-center text-light justify-content-center align-items-center">
         <div class="col">
-          <h3>WWCDF</h3>
+          <h3>Weather2x Chicken Dinner Forecast</h3>
         </div>
       </div>
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md">
-          <form class="form-control">
+          <div class="form-control">
             <input class="form-control m-1" type="text" placeholder="Name Of City" id="city">
             <div class="m-1">
-              <button class="btn btn-danger" id="celcius">Celcius</button>
-              <button class="btn btn-warning" id="farenheit">Farenheit</button>
               <button class="btn btn-primary" id="forecast">Forecast</button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
       <div class="row py-3 mt-5 text-center">
-        <div class="col-md-12 col-sm-12 text-white">
-          <h1 id="cityPlace">Manila, Philippines</h1>
+        <div class="col-md-12 col-sm-12 text-white text-shadow">
+          <h1 id="cityPlace">--City--, ---Country---</h1>
+          <button class="btn btn-danger" id="celcius">Celcius</button>
+          <button class="btn btn-warning" id="farenheit">Farenheit</button>
         </div>
       </div>
-      <div class="row py-3 mt-5 text-center">
+      <div class="row py-3 mt-3 text-center">
         <div class="col-md-6 col-sm-12 text-white">
-           <!-- celsius -->
-           <label for="temp">Temperature </label>
-           <p id="temp">29°C</p>
-           <!-- clouds, sunny -->
-           <label for="main">Status </label>
-           <p id="main">Clouds</p>
-           <!--  -->
-           <label for="humidity">Humidity </label>
-           <p id="humidity">70h</p>
+          <!-- celsius -->
+          <div>
+            <label for="temp">Temperature </label>
+            <p class="" id="temp">--°C</p>
+          </div>
+          <!-- clouds, sunny -->
+          <div>
+            <label for="main">Status </label>
+            <p id="main">----</p>
+          </div>
+          <!--  -->
+          <div>
+            <label for="humidity">Humidity </label>
+            <p id="humidity">--h</p>
+          </div>
+          <div>
+            <label for="speed">Wind Speed</label>
+            <p id="speed">-.--km/h</p>
+          </div>
         </div>
         <div class="col-md-6 col-sm-12 text-white">
           <!-- broken clouds, sunny -->
-          <label for="description">Description </label>
-          <p id="description">Broken Clouds</p>
+          <div>
+            <label for="description">Type of Clouds </label>
+            <p id="description">------</p>
+          </div>
           <!--  -->
-          <label for="temp-min">Temperature min </label>
-          <p id="temp-min">27°C</p>
+          <div>
+            <label for="temp-min">Min Temperature</label>
+            <p id="temp_min">--°C</p>
+          </div>
+          <div>
+            <label for="temp-min"> Max Temperature</label>
+            <p id="temp_max">--°C</p>
+          </div>
           <!--  -->
-          <label for="temp-max">Temperature max </label>
-          <p id="temp-max">31°C</p>
-          <!--  -->
-          <label for="speed">Speed </label>
-          <p id="speed">5.14km/h</p>
           <!-- long, lat -->
-          <p id="geolocation">long: 120.9822, lat: 14.6042</p>
+          <label for="geolocation">Coordinates</label>
+          <p id="geolocation">long: ---.----, lat: --.----</p>
           <!--  -->
-          <label for="timezone">Timezone </label>
-          <p id="timezone">-08:00</p>
         </div>
       </div>
     </div>
@@ -110,20 +122,18 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/%22%3EMDBootstrap.com"></a>
     </div>
     <!-- Copyright -->
   </footer>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <script src="asset/js/main.js"></script>
+
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
