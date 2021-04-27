@@ -251,13 +251,13 @@ const countryList = {
 }
 
 $(document).ready(function () {
-    
-   $('#forecast').click(function () {
+
+   $('#forecast, #celcius').click(function () {
       let url = 'http://api.openweathermap.org/data/2.5/weather?q='
       let token = '&appid=14c7e3329c0a2fd5fd361115a1015690'
       let celcius = '&units=metric'
       let city = $('#city').val() === '' ? 'Manila' : $('#city').val();
-      
+
       $.ajax({
          url: `${url + city + token + celcius}`,
          type: 'get',
@@ -273,28 +273,28 @@ $(document).ready(function () {
             /* changing the Name of City Place*/
             /*INFORMATIONS ON WEATHER*/
             /*Temp*/
-            $('#temp').text(data.main.temp);
+            $('#temp').text(data.main.temp + '°C');
             /*Temp*/
             /*Weather*/
             $('#main').text(data.weather[0].main);
             /*Weather*/
             /*humidity*/
-            $('#humidity').text(data.main.humidity);
+            $('#humidity').text(data.main.humidity + 'h');
             /*humidity*/
             /*speed*/
-            $('#speed').text(data.wind.speed+ 'km/h');
+            $('#speed').text(data.wind.speed + 'km/h');
             /*speed*/
             /*description*/
             $('#description').text(data.weather[0].description);
             /*description*/
             /*temp_min*/
-            $('#temp_min').text(data.main.temp_min);
+            $('#temp_min').text(data.main.temp_min + '°C');
             /*temp_min*/
             /*temp_max*/
-            $('#temp_max').text(data.main.temp_max);
+            $('#temp_max').text(data.main.temp_max + '°C');
             /*temp_max*/
             /*geolocation*/
-            $('#geolocation').text('Long: '+data.coord.lon + ' Lat: '+data.coord.lat);
+            $('#geolocation').text('Long: ' + data.coord.lon + ' Lat: ' + data.coord.lat);
             /*geolocation*/
             /*INFORMATIONS ON WEATHER*/
          },
@@ -303,4 +303,55 @@ $(document).ready(function () {
          },
       })
    })
+
+   $('body').on('click', '#farenheit', function () {
+      let url = 'http://api.openweathermap.org/data/2.5/weather?q='
+      let token = '&appid=14c7e3329c0a2fd5fd361115a1015690'
+      let city = $('#city').val() === '' ? 'Manila' : $('#city').val();
+
+      $.ajax({
+         url: `${url + city + token}`,
+         type: 'get',
+         dataType: 'json',
+         success: function (data) {
+            console.log('Success')
+            /*Edit for City pLace */
+            let check = $(countryList).prop(data.sys.country);
+            $('#cityPlace').text(
+               city[0].toUpperCase() + city.slice(1) + ',' + check
+            )
+            $('#city').val('Manila');
+            /* changing the Name of City Place*/
+            /*INFORMATIONS ON WEATHER*/
+            /*Temp*/
+            $('#temp').text(data.main.temp + '°F');
+            /*Temp*/
+            /*Weather*/
+            $('#main').text(data.weather[0].main);
+            /*Weather*/
+            /*humidity*/
+            $('#humidity').text(data.main.humidity + 'h');
+            /*humidity*/
+            /*speed*/
+            $('#speed').text(data.wind.speed + 'km/h');
+            /*speed*/
+            /*description*/
+            $('#description').text(data.weather[0].description);
+            /*description*/
+            /*temp_min*/
+            $('#temp_min').text(data.main.temp_min + '°F');
+            /*temp_min*/
+            /*temp_max*/
+            $('#temp_max').text(data.main.temp_max + '°F');
+            /*temp_max*/
+            /*geolocation*/
+            $('#geolocation').text('Long: ' + data.coord.lon + ' Lat: ' + data.coord.lat);
+            /*geolocation*/
+            /*INFORMATIONS ON WEATHER*/
+         },
+         error: function (error) {
+            console.log('Error Exception Thrown' + error)
+         },
+      })
+   });
 })
