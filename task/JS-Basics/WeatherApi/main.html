@@ -57,7 +57,8 @@
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md">
           <div class="form-control">
-            <input class="form-control m-1" type="text" placeholder="Name Of City" id="city">
+            <input class="form-control m-1 text-center align-items-center" type="text" placeholder="Name Of City"
+              id="city">
             <div class="m-1">
               <button class="btn btn-primary" id="forecast">Forecast</button>
             </div>
@@ -76,7 +77,8 @@
           <!-- celsius -->
           <div>
             <label for="temp">Temperature </label>
-            <p class="" id="temp">--°C</p>
+            <p class="temp" id="temp">--°C</p>
+            <p class="tempF d-none" id="tempF">--°F</p>
           </div>
           <!-- clouds, sunny -->
           <div>
@@ -103,10 +105,12 @@
           <div>
             <label for="temp-min">Min Temperature</label>
             <p id="temp_min">--°C</p>
+            <p class="tempF d-none" id="temp_minF">--°F</p>
           </div>
           <div>
             <label for="temp-min"> Max Temperature</label>
             <p id="temp_max">--°C</p>
+            <p class="tempF d-none" id="temp_maxF">--°F</p>
           </div>
           <!--  -->
           <!-- long, lat -->

@@ -13,6 +13,14 @@
 .containerSize {
    min-height: 50vh;
 }
-.home{
+.home {
    margin-top: 155px;
+}
+p {
+   font-size: 2.5rem;
+   text-shadow: 3px 3px #000;
+}
+label {
+   font-size: 1.5rem;
+   text-shadow: 2px 2px #000;
 }
