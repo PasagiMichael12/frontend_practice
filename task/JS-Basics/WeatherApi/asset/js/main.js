@@ -307,6 +307,12 @@ $(document).ready(function () {
             $('#speed').text(data.wind.speed + 'km/h')
             /*speed*/
             /*description*/
+            $('#imgDescription').attr(
+               'src',
+               'http://openweathermap.org/img/w/' +
+                  data.weather[0].icon +
+                  '.png'
+            )
             $('#description').text(data.weather[0].description)
             /*description*/
             /*temp_min*/
