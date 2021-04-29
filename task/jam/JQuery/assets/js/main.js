@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $( "#num").focus();
+
     $('input').keypress(function(e) {
         if(e.which == 13) { 
             $('#move').trigger('click');
