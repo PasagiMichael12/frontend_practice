@@ -250,83 +250,94 @@ const countryList = {
    AX: 'Åland Islands',
 }
 
-$(document).ready(function () {
-   $('#forecast, #celcius, #farenheit').click(function (e) {
-      if (e.target.id === 'farenheit') {
-         forecastWeather(' ')
-         $('#temp, #temp_min, #temp_max').addClass('d-none')
-         $('#tempF, #temp_minF, #temp_maxF').removeClass('d-none')
-      }
-      if (e.target.id === 'celcius' || e.target.id === 'forecast') {
-         let celcius = '&units=metric'
-         forecastWeather(celcius)
-         $('#tempF, #temp_minF, #temp_maxF').addClass('d-none')
-         $('#temp, #temp_min, #temp_max').removeClass('d-none')
-      }
-   })
+fetch(
+   `http://api.openweathermap.org/data/2.5/weather?q=Caloocan&appid=14c7e3329c0a2fd5fd361115a1015690`
+)
+   .then((response) => response.json())
+   .then((data) =>
+      $('#geolocation').text(
+         'Long: ' + data.coord.lon + ' Lat: ' + data.coord.lat
+      )
+   )
+   .catch((error) => console.log('Data Error: ' + error))
 
-   function forecastWeather(celcius) {
-      let url = 'http://api.openweathermap.org/data/2.5/weather?q='
-      let token = '&appid=14c7e3329c0a2fd5fd361115a1015690'
-      let city = $('#city').val()
+// $(document).ready(function () {
+//    $('#forecast, #celcius, #farenheit').click(function (e) {
+//       if (e.target.id === 'farenheit') {
+//          forecastWeather(' ')
+//          $('#temp, #temp_min, #temp_max').addClass('d-none')
+//          $('#tempF, #temp_minF, #temp_maxF').removeClass('d-none')
+//       }
+//       if (e.target.id === 'celcius' || e.target.id === 'forecast') {
+//          let celcius = '&units=metric'
+//          forecastWeather(celcius)
+//          $('#tempF, #temp_minF, #temp_maxF').addClass('d-none')
+//          $('#temp, #temp_min, #temp_max').removeClass('d-none')
+//       }
+//    })
 
-      $.ajax({
-         url: `${url + city + token + celcius}`,
-         type: 'get',
-         dataType: 'json',
-         success: function (data) {
-            console.log('Success')
-            /*Edit for City pLace */
-            let check = $(countryList).prop(data.sys.country)
-            $('#cityPlace').text(
-               city[0].toUpperCase() + city.slice(1) + ', ' + check
-            )
-            $('#city').val(city)
-            /* changing the Name of City Place*/
-            /*INFORMATIONS ON WEATHER*/
-            /**----------------------------- */
-            /*Temp*/
-            $('#temp').text(data.main.temp + '°C')
-            $('#tempF').text(data.main.temp + '°F')
-            /*Temp*/
-            $('#temp_min').text(data.main.temp_min + '°C')
-            $('#temp_minF').text(data.main.temp_min + '°F')
-            /*temp_min*/
-            /*temp_max*/
-            $('#temp_max').text(data.main.temp_max + '°C')
-            $('#temp_maxF').text(data.main.temp_max + '°F')
-            /*temp_max*/
-            /**----------------------------- */
-            /*Weather*/
-            $('#main').text(data.weather[0].main)
-            /*Weather*/
-            /*humidity*/
-            $('#humidity').text(data.main.humidity + 'h')
-            /*humidity*/
-            /*speed*/
-            $('#speed').text(data.wind.speed + 'km/h')
-            /*speed*/
-            /*description*/
-            $('#imgDescription').attr(
-               'src',
-               'http://openweathermap.org/img/w/' +
-                  data.weather[0].icon +
-                  '.png'
-            )
-            $('#description').text(data.weather[0].description)
-            /*description*/
-            /*temp_min*/
+//    function forecastWeather(celcius) {
+//       let url = 'http://api.openweathermap.org/data/2.5/weather?q='
+//       let token = '&appid=14c7e3329c0a2fd5fd361115a1015690'
+//       let city = $('#city').val()
 
-            /*geolocation*/
-            $('#geolocation').text(
-               'Long: ' + data.coord.lon + ' Lat: ' + data.coord.lat
-            )
-            /*geolocation*/
-            /*INFORMATIONS ON WEATHER*/
-         },
-         error: function (error) {
-            console.log('Error Exception Thrown' + error)
-         },
-      })
-   }
-})
+//       $.ajax({
+//          url: `${url + city + token + celcius}`,
+//          type: 'get',
+//          dataType: 'json',
+//          success: function (data) {
+//             console.log('Success')
+//             /*Edit for City pLace */
+//             let check = $(countryList).prop(data.sys.country)
+//             $('#cityPlace').text(
+//                city[0].toUpperCase() + city.slice(1) + ', ' + check
+//             )
+//             $('#city').val(city)
+//             /* changing the Name of City Place*/
+//             /*INFORMATIONS ON WEATHER*/
+//             /**----------------------------- */
+//             /*Temp*/
+//             $('#temp').text(data.main.temp + '°C')
+//             $('#tempF').text(data.main.temp + '°F')
+//             /*Temp*/
+//             $('#temp_min').text(data.main.temp_min + '°C')
+//             $('#temp_minF').text(data.main.temp_min + '°F')
+//             /*temp_min*/
+//             /*temp_max*/
+//             $('#temp_max').text(data.main.temp_max + '°C')
+//             $('#temp_maxF').text(data.main.temp_max + '°F')
+//             /*temp_max*/
+//             /**----------------------------- */
+//             /*Weather*/
+//             $('#main').text(data.weather[0].main)
+//             /*Weather*/
+//             /*humidity*/
+//             $('#humidity').text(data.main.humidity + 'h')
+//             /*humidity*/
+//             /*speed*/
+//             $('#speed').text(data.wind.speed + 'km/h')
+//             /*speed*/
+//             /*description*/
+//             $('#imgDescription').attr(
+//                'src',
+//                'http://openweathermap.org/img/w/' +
+//                   data.weather[0].icon +
+//                   '.png'
+//             )
+//             $('#description').text(data.weather[0].description)
+//             /*description*/
+//             /*temp_min*/
+
+//             /*geolocation*/
+//             $('#geolocation').text(
+//                'Long: ' + data.coord.lon + ' Lat: ' + data.coord.lat
+//             )
+//             /*geolocation*/
+//             /*INFORMATIONS ON WEATHER*/
+//          },
+//          error: function (error) {
+//             console.log('Error Exception Thrown' + error)
+//          },
+//       })
+//    }
+// })

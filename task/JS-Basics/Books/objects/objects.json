@@ -1,0 +1,26 @@
+[
+   {
+      "title": "The Design of EveryDay Things",
+      "img": "../assets/img/doet.png",
+      "author": "Don Norman",
+      "alreadyRead": true
+   },
+   {
+      "title": "The Most Human Human",
+      "img": "../assets/img/TMHH.jpg",
+      "author": "Brian Christian",
+      "alreadyRead": false
+   },
+   {
+      "title": "Her",
+      "img": "../assets/img/her.jpg",
+      "author": "Ad Lorem",
+      "alreadyRead": true
+   },
+   {
+      "title": "Wanted: OreabaB",
+      "img": "../assets/img/sirr.jpg",
+      "author": "Michael Pasagi",
+      "alreadyRead": false
+   }
+]
