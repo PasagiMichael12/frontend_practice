@@ -29,10 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav pictureSize">
-                        <a class="nav-link active" aria-current="page" href="#"><img src="assets/images/facebook.png"
-                                alt=""></a>
-                        <a class="nav-link" href="#"><img src="assets/images/jobstreet.png" alt=""></a>
-                        <a class="nav-link" href="#"><img src="assets/images/linkedin.png" alt=""></a>
+                        <a class="nav-link active" aria-current="page" href="#"><img
+                                src="assets/images/headerImg/facebook.png" alt=""></a>
+                        <a class="nav-link" href="#"><img src="assets/images/headerImg/jobstreet.png" alt=""></a>
+                        <a class="nav-link" href="#"><img src="assets/images/headerImg/linkedin.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-4">
             <div class="container">
-                <img src="assets/images/logo.png" alt="">
+                <img src="assets/images/headerImg/logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -73,13 +73,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active item">
-                            <img src="assets/images/navImage.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel/navImage.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item item">
-                            <img src="assets/images/navImage2.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel/navImage2.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item item">
-                            <img src="assets/images/navImage3.jpg" class="d-block  w-100" alt="...">
+                            <img src="assets/images/carousel/navImage3.jpg" class="d-block  w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -96,7 +96,9 @@
             </div>
         </div>
     </section>
+    <!--Carousel Section-->
 
+    <!--About Container-->
     <section class="aboutContainer">
         <div class="container">
             <div class="row text-center my-4">
@@ -155,42 +157,36 @@
                 <div class="col-md-6 px-5">
                     <!-- Mission -->
                     <div class="row">
-                        <div class="col-4">
-                            <div class="mission">
+                        <div class="col">
+                            <div class="mission text-center mb-3">
                                 <h3>Mission</h3>
                             </div>
-                        </div>
-                        <div class="col-8">
                             <div class="mission-paragraph justify">
-                                <p>To Contribute Radically on our Customers Success by Providing Technical Services with
+                                <p>To Contribute Radically on our Customers Success by Providing Technical
+                                    Services
+                                    with
                                     embedded Excellence and Develop Industry Experts.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Vision -->
                     <div class="row">
-                        <div class="col-8 text-end">
+                        <div class="col">
+                            <div class="vision text-center mb-3 mt-3">
+                                <h3>Vision</h3>
+                            </div>
                             <div class="vision-paragraph justify">
-                                <p>To be a Significant Contributor to the Information and Communication Technology
+                                <p>To be a Significant Contributor to the Information and Communication
+                                    Technology
                                     Industry and be Recognize as One of the Top Local ICT Provider in terms of
                                     Profitability and Quality of Service.</p>
-
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="vision">
-                                <h3>Vision</h3>
                             </div>
                         </div>
                     </div>
-                    <!-- Foundation -->
-                    <div class="row text-start flex-row">
-                        <div class="col-4">
-                            <div class="foundation">
+                    <div class="row">
+                        <div class="col">
+                            <div class="foundation text-center mb-3 mt-3">
                                 <h3>Foundation</h3>
                             </div>
-                        </div>
-                        <div class="col-8">
                             <div class="foundation-paragraph justify">
                                 <p>Is a profitable and Evolving Community of Problem Solvers and Technolgy Professionals
                                     Built in the Foundation of Honor, Cooperation, Friendship and Patriotism.</p>
@@ -201,28 +197,282 @@
             </div>
         </div>
     </section>
+    <!--About Container-->
 
+    <!--Service Container-->
     <section class="servicesContainer">
         <div class="container">
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-center text-center my-4">
                 <div class="col">
                     <div class="title">
-                        <h1>Services</h1>
+                        <h1>Our Services</h1>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center text-center justify-content-center">
-                <div class="col-3">asd</div>
-                <div class="col-3">asd</div>
-                <div class="col-3">asd</div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="assets/images/services/consult.png" class="card-img-top servicesImage"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">IT Service and Quality Management Consulting</h5>
+                                    <button type="button" class="btn btn-info" data-toggle="modal"
+                                        data-target="#serviceModal_1">
+                                        Learn More
+                                    </button>
+                                    <!-- Modal - IT Service and Quality Management Consulting -->
+                                    <div class="modal fade" id="serviceModal_1" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center text-center">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">IT Service
+                                                            and
+                                                            Quality Management Consulting</h5>
+                                                    </div>
+                                                    <button type="button" class="close btn btn-danger"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="modal-body justify py-5 mx-5">
+                                                        From Capability Assessment to Root Cause Analysis to help
+                                                        customers improve their Business Efficiency and Capacity using
+                                                        International Standard and Best Practices Methods like ITIL,
+                                                        ISO, Lean Six Sigma and others.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal - IT Service and Quality Management Consulting -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="assets/images/services/admin.png" class="card-img-top" servicesImage
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Administration Network Development And Optimization</h5>
+                                    <button type="button" class="btn btn-info" data-toggle="modal"
+                                        data-target="#serviceModal_2">
+                                        Learn More
+                                    </button>
+                                    <!-- Modal - Administration Network Development And Optimization -->
+                                    <div class="modal fade" id="serviceModal_2" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                        Administration
+                                                        Network Development And Optimization</h5>
+                                                    <button type="button" class="close btn btn-danger"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="modal-body justify py-5 mx-5">
+                                                        Custom fit Systems/Application Software Development according to
+                                                        customers requirements from complex enterprise portal to simple
+                                                        webpage design, Designing customers' IT Infrastructure to
+                                                        support their business needs, implementing customers own design
+                                                        for their internal use of their clients requirements,
+                                                        Integrating new system or network with their existing
+                                                        infrastracture, monitoring and improving customers systems and
+                                                        network's availability.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal - Administration Network Development And Optimization -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="assets/images/services/qa.png" class="card-img-top servicesImage" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Service, Software and CPE Quality Assurance and Testing</h5>
+                                    <button type="button" class="btn btn-info" data-toggle="modal"
+                                        data-target="#serviceModal_3">
+                                        Learn More
+                                    </button>
+                                    <!-- Modal - Service, Software and CPE Quality Assurance and Testing -->
+                                    <div class="modal fade" id="serviceModal_3" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Service, Software
+                                                        and CPE Quality Assurance and Testing</h5>
+                                                    <button type="button" class="close btn btn-danger"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="modal-body justify py-5 mx-5">
+                                                        An external Quality Assurance service for businesses that are
+                                                        looking for third party to test their own Product/Service before
+                                                        commercial deployment or a third party to test their acquired
+                                                        service or product from their supplier/vendor.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal - Service, Software and CPE Quality Assurance and Testing -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row align-items-center text-center justify-content-center">
-                <div class="col-3">asd</div>
-                <div class="col-3">asd</div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="assets/images/services/techsup.png" class="card-img-top servicesImage"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">IT Technical Support</h5>
+                                    <button type="button" class="btn btn-info" data-toggle="modal"
+                                        data-target="#serviceModal_4">
+                                        Learn More
+                                    </button>
+                                    <!-- Modal - IT Technical Support -->
+                                    <div class="modal fade" id="serviceModal_4" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class=" modal-header">
+                                                    <div class="row">
+                                                        <div class=" col">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">IT
+                                                                Technical
+                                                                Support</h5>
+                                                        </div>
+                                                    </div>
+                                                    <button type=" button" class="close btn btn-danger"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="modal-body justify py-5 mx-5">
+                                                        An End to End IT Service provider typically for SMEs
+                                                        covering
+                                                        all
+                                                        their IT needs from helping the customer decide which
+                                                        computer(s) to
+                                                        buy and where to buy them, building their office
+                                                        network, to
+                                                        providing support for internet connection problems and
+                                                        desktop
+                                                        concerns such as application installation, files backup,
+                                                        windows
+                                                        OS
+                                                        troubleshooting and others.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal - IT Technical Support -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="assets/images/services/pc.png" class="card-img-top servicesImage" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Personal Computer and Server Administration</h5>
+                                    <button type="button" class="btn btn-info" data-toggle="modal"
+                                        data-target="#serviceModal_5">
+                                        Learn More
+                                    </button>
+                                    <!-- Modal - Personal Computer and Server Administration -->
+                                    <div class="modal fade" id="serviceModal_5" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Personal
+                                                        Computer
+                                                        and Server Administration</h5>
+                                                    <button type="button" class="close btn btn-danger"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="modal-body justify py-5 mx-5">
+                                                        Day to day Desktop Support and Server Administration
+                                                        typically
+                                                        for large enterprises, from installation of
+                                                        applications,
+                                                        troubleshooting hardware and software, to monitoring
+                                                        Server
+                                                        Application Availability.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal - Personal Computer and Server Administration -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!--Service Container-->
 
+    <!--Career Container-->
     <section class="careerContainer">
         <div class="container">
             <div class="row justify-content-center text-center">
@@ -233,14 +483,54 @@
                 </div>
             </div>
             <div class="row align-items-center text-center justify-content-center">
-                <div class="col-3">asd</div>
-                <div class="col-3">asd</div>
-                <div class="col-3">asd</div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Enterprise Team</h5>
+                                    <p class="card-text">Code , Create, Design a websites for lovely clients</p>
+                                    <a href="#" class="btn btn-warning">APPLY NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">TelCo Team</h5>
+                                    <p class="card-text">Setting up the environment in networks for telco industries
+                                    </p>
+                                    <a href="#" class="btn btn-warning">APPLY NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Network - Admin Team</h5>
+                                    <p class="card-text">Become a part of Admin team for administrative tasks</p>
+                                    <a href="#" class="btn btn-warning">APPLY NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!--Career Container-->
 
-    <!--Carousel Section-->
 
 
 
@@ -249,6 +539,15 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
