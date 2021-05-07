@@ -31,6 +31,12 @@
 
 .aboutContainer {
    margin: 0;
+   background: rgb(0, 99, 202);
+   background: linear-gradient(
+      151deg,
+      rgba(0, 99, 202, 1) 0%,
+      rgba(113, 0, 242, 1) 71%
+   );
 }
 .justify {
    text-align: justify;
@@ -38,7 +44,12 @@
 }
 /*Services images size */
 .servicesImage {
-   height: 50px;
-   width: 50px;
+   height: 60px;
+   width: 60px;
 }
 /*Services images size */
+/* Services card size */
+.servicesCard {
+   height: 250px;
+   width: 250px;
+}
