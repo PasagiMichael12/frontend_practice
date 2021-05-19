@@ -1,8 +1,5 @@
 body {
     background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .padding {
@@ -81,7 +78,4 @@ html body .dl {
 small {
     font-size: 80%;
     font-weight: 400
-}
-.input-group{
-    width: 250px;
 }

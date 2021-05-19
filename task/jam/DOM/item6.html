@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="bookPage">
-        <h1>Book Archives</h1>
-    </div>
+  <div class="bookPage">
+    <h1>Book Archives</h1>
+  </div>
 
 
 
 
 
-    <script>
-        var books = [
+  <script>
+    var books = [
       {
         title: 'The Design of EveryDay Things',
         author: 'Don Norman',
@@ -38,33 +40,66 @@
         alreadyRead: false
       }
     ];
-    
-    for(let x = 0; x < books.length; x++){
-      
-        var unorderedList = document.createElement('ul');
-        var list = document.createElement('li');
-        var tag = document.createElement('p');
-        tag.setAttribute("id", "bookList")
-        var content = document.createTextNode(`${books[x].title}` + " by " + `${books[x].author}`);
-        var link = document.createElement('a');
-        link.setAttribute("href", "https://www.google.com/");
-        var image = document.createElement('img');
-        image.setAttribute("src", "images/star.jpg")
-        
-        tag.appendChild(content);
-        link.appendChild(image);
-        list.append(tag);
-        list.append(link);
-        unorderedList.append(list);
-        document.body.appendChild(unorderedList);
 
-        if(books[x].alreadyRead == true){
-          tag.setAttribute("style", "color:red;");
-        }else{
-          tag.setAttribute("style", "color:green;");
-        }
-       
+    for (let x = 0; x < books.length; x++) {
+
+      var unorderedList = document.createElement('ul');
+      var list = document.createElement('li');
+      var tag = document.createElement('p');
+      tag.setAttribute("id", "bookList")
+      var content = document.createTextNode(`${books[x].title}` + " by " + `${books[x].author}`);
+      var link = document.createElement('a');
+      link.setAttribute("href", "https://www.google.com/");
+      var image = document.createElement('img');
+      image.setAttribute("src", "images/star.jpg")
+
+      tag.appendChild(content);
+      link.appendChild(image);
+      list.append(tag);
+      list.append(link);
+      unorderedList.append(list);
+      document.body.appendChild(unorderedList);
+
+      if (books[x].alreadyRead == true) {
+        tag.setAttribute("style", "color:red;");
+      } else {
+        tag.setAttribute("style", "color:green;");
+      }
+
     };
-    </script>
+
+    const addBorder = (e) => {
+      e.classList.add('visited');
+    }
+    const books = [
+      {
+        title: 'The Design of EveryDay Things',
+        author: 'Don Norman',
+        alreadyRead: true
+      },
+      {
+        title: 'The Most Human Human',
+        author: 'Brian Christian',
+        alreadyRead: true
+      },
+      {
+        title: 'Her',
+        author: 'ad lorem',
+        alreadyRead: true
+      },
+      {
+        title: 'Asira',
+        author: 'Michael Pasagi',
+        alreadyRead: false
+      }
+    ];
+    const ul = document.getElementById('items');
+    const booksHTML = books.map(book => {
+      const { alreadyRead, title, author } = book;
+      return `<li><a href="#"><img onclick="addBorder(this)" src="${alreadyRead ? '../img/green.png' : '../img/red.png'}"width="100" "></img></a><li>${title}</li><li>${author}</li>`;
+    });
+    ul.innerHTML = booksHTML.toString();
+  </script>
 </body>
+
 </html>
