@@ -1,0 +1,26 @@
+{
+   "customer1": {
+      "image": "assets/images/pic2.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit tenetur dolorem in iste praesentium cumque dolorum excepturi dignissimos corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?",
+      "system": "5.0kW",
+      "Monthly": "161.10kWh",
+      "ems": "$145.67",
+      "total": "3.51MWh"
+   },
+   "customer2": {
+      "image": "assets/images/pic1.jpg",
+      "description": "alias cum velit tenetur dolorem in iste dignissimos corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati ",
+      "system": "5.0kW",
+      "Monthly": "161.10kWh",
+      "ems": "$145.67",
+      "total": "3.51MWh"
+   },
+   "customer3": {
+      "image": "assets/images/pic3.jpg",
+      "description": "corporis?Lorem ipsum, dolor sit amet eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?Lorem ipsum, dolor sit amet consectetur alias cum velit tenetur dolorem in iste praesentium cumque dolorum excepturi dignissimos adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati ",
+      "system": "--.--kW",
+      "Monthly": "--.--kWh",
+      "ems": "$--.--",
+      "total": "--.--MWh"
+   }
+}

@@ -1,0 +1,24 @@
+.heading-font {
+   font-family: 'Playfair Display', serif;
+}
+.primary-color {
+   color: #22c680;
+}
+.bg-color {
+   background-color: #22c680;
+}
+.paragraph-font {
+   font-family: 'Poppins', sans-serif;
+}
+.kiloW {
+   display: flex;
+   justify-content: center;
+   color: #22c680;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-weight: bold;
+}
+.description {
+   display: flex;
+   justify-content: center;
+}
