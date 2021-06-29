@@ -1,6 +1,8 @@
 {
    "customer1": {
       "image": "assets/images/pic2.jpg",
+      "project": "Mandaluyong Project",
+      "installed": "Installed on June 24, 2020",
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit tenetur dolorem in iste praesentium cumque dolorum excepturi dignissimos corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?",
       "system": "5.0kW",
       "Monthly": "161.10kWh",
@@ -9,6 +11,8 @@
    },
    "customer2": {
       "image": "assets/images/pic1.jpg",
+      "project": "Marikina Project",
+      "installed": "Installed on December 15, 2020",
       "description": "alias cum velit tenetur dolorem in iste dignissimos corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati ",
       "system": "5.0kW",
       "Monthly": "161.10kWh",
@@ -17,7 +21,9 @@
    },
    "customer3": {
       "image": "assets/images/pic3.jpg",
-      "description": "corporis?Lorem ipsum, dolor sit amet eum. Vitae, quis veniam modi ea vero obcaecati alias cum velit ?Lorem ipsum, dolor sit amet consectetur alias cum velit tenetur dolorem in iste praesentium cumque dolorum excepturi dignissimos adipisicing elit. Dicta, eum. Vitae, quis veniam modi ea vero obcaecati ",
+      "project": "Coming Soon...",
+      "installed": "----------",
+      "description": "-----------------------",
       "system": "--.--kW",
       "Monthly": "--.--kWh",
       "ems": "$--.--",

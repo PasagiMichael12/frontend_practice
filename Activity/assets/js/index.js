@@ -14,6 +14,8 @@ $(document).ready(() => {
          })
          function getDetails(values) {
             $('.frontImg').attr('src', `${values.image}`)
+            $('.project').text(values.project)
+            $('.installed').text(values.installed)
             $('.phrase').text(values.description)
             $('.system').text(values.system)
             $('.month').text(values.Monthly)
