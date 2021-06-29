@@ -4,92 +4,47 @@ $(document).ready(function () {
     type: "GET",
     datatype: "json/application",
     success: function (data) {
-      let name = data.projects[0].name;
-      let image = data.projects[0].image;
-      let date = data.projects[0].date;
-      let description = data.projects[0].description;
-      let systemSize = data.projects[0].systemSize;
-      let monthlyYield = data.projects[0].monthlyYield;
-      let monthlySavings = data.projects[0].monthlySavings;
-      let totalYield = data.projects[0].totalYield;
-      let imageUrl = "assets/images/" + image;
+      // global var
+      var x = 0;
 
-      $('#mainImg').attr("src", imageUrl);
-      $('#mainDesc').text(description);
-      $('#mainName').text(name);
-      $('#mainDate').text("Installed on " + date);
-      $('#systemSize').text(systemSize + " kW");
-      $('#monthlyYield').text(monthlyYield + " kWh");
-      $('#monthlySavings').text("$" + monthlySavings);
-      $('#totalYield').text(totalYield + " MWh");
+      // main() - get value from data.json
+      function main() {
+        var name = data.projects[x].name;
+        var image = data.projects[x].image;
+        var date = data.projects[x].date;
+        var description = data.projects[x].description;
+        var systemSize = data.projects[x].systemSize;
+        var monthlyYield = data.projects[x].monthlyYield;
+        var monthlySavings = data.projects[x].monthlySavings;
+        var totalYield = data.projects[x].totalYield;
+        var imageUrl = "assets/images/" + image;
 
+        $('#mainImg').attr("src", imageUrl);
+        $('#mainDesc').text(description);
+        $('#mainName').text(name);
+        $('#mainDate').text("Installed on " + date);
+        $('#systemSize').text(systemSize + " kW");
+        $('#monthlyYield').text(monthlyYield + " kWh");
+        $('#monthlySavings').text("$" + monthlySavings);
+        $('#totalYield').text(totalYield + " MWh");
+      }
+
+      // onload default values
+      main($(document).ready());
+
+      // call the main() function then change global var value - (card 1, 2, 3)
+      // card 1
       $("#proj1").click(function () {
-        let name = data.projects[0].name;
-        let image = data.projects[0].image;
-        let date = data.projects[0].date;
-        let description = data.projects[0].description;
-        let systemSize = data.projects[0].systemSize;
-        let monthlyYield = data.projects[0].monthlyYield;
-        let monthlySavings = data.projects[0].monthlySavings;
-        let totalYield = data.projects[0].totalYield;
-        let imageUrl = "assets/images/" + image;
-
-        $('#mainImg').attr("src", imageUrl);
-        $('#mainDesc').text(description);
-        $('#mainName').text(name);
-        $('#mainDate').text("Installed on " + date);
-        $('#systemSize').text(systemSize + " kW");
-        $('#monthlyYield').text(monthlyYield + " kWh");
-        $('#monthlySavings').text("$" + monthlySavings);
-        $('#totalYield').text(totalYield + " MWh");
-        $('#co-own').show();
-        $('#checkProperty').show();
-      });
+        main(x = 0);
+      })
+      // card 2
       $("#proj2").click(function () {
-        let name = data.projects[1].name;
-        let image = data.projects[1].image;
-        let date = data.projects[1].date;
-        let description = data.projects[1].description;
-        let systemSize = data.projects[1].systemSize;
-        let monthlyYield = data.projects[1].monthlyYield;
-        let monthlySavings = data.projects[1].monthlySavings;
-        let totalYield = data.projects[1].totalYield;
-        let imageUrl = "assets/images/" + image;
-
-        $('#mainImg').attr("src", imageUrl);
-        $('#mainDesc').text(description);
-        $('#mainName').text(name);
-        $('#mainDate').text("Installed on " + date);
-        $('#systemSize').text(systemSize + " kW");
-        $('#monthlyYield').text(monthlyYield + " kWh");
-        $('#monthlySavings').text("$" + monthlySavings);
-        $('#totalYield').text(totalYield + " MWh");
-        $('#co-own').show();
-        $('#checkProperty').show();
-      });
+        main(x = 1);
+      })
+      // card 3
       $("#proj3").click(function () {
-        let name = data.projects[2].name;
-        let image = data.projects[2].image;
-        let date = data.projects[2].date;
-        let description = data.projects[2].description;
-        let systemSize = data.projects[2].systemSize;
-        let monthlyYield = data.projects[2].monthlyYield;
-        let monthlySavings = data.projects[2].monthlySavings;
-        let totalYield = data.projects[2].totalYield;
-        let imageUrl = "assets/images/" + image;
-
-        $('#mainImg').attr("src", imageUrl);
-        $('#mainDesc').text(description);
-        $('#mainName').text(name);
-        $('#mainDate').text("Installed on " + date);
-        $('#systemSize').text(systemSize + " kW");
-        $('#monthlyYield').text(monthlyYield + " kWh");
-        $('#monthlySavings').text("$" + monthlySavings);
-        $('#totalYield').text(totalYield + " MWh");
-        $('#co-own').hide();
-        $('#checkProperty').hide();
-      });
-
+        main(x = 2);
+      })
     },
     error: function () {
       alert("error");
