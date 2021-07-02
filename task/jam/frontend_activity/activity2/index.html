@@ -21,14 +21,14 @@
 <body>
   <!-- header and navbar -->
   <header>
-    <div class="grid grid-cols-8 gap-0 px-40 py-3 items-center">
+    <div class="grid grid-cols-8 gap-0 px-56 py-3 items-center">
       <div class="grid col-start-1 col-span-2">
         <img src="assets/images/cogen.jpg" alt="">
       </div>
-      <div class="text-base font-extrabold">
+      <div class="text-base font-extrabold text-center">
         <a href="">Home</a>
       </div>
-      <div class="text-base font-extrabold">
+      <div class="text-base font-extrabold text-center">
         <a href="">Co-Own</a>
       </div>
       <div class="grid col-end-9 text-green-400 text-sm font-medium">
@@ -39,9 +39,239 @@
       </div>
     </div>
   </header>
-  <div id="hero" class="h-screen" style="background-image: url('assets/images/solar.jpg')">
-
+  <!-- hero -->
+  <div class="" style="background-image: url('assets/images/solar.jpg');background-repeat:no-repeat;
+  background-size:cover;">
+    <!-- hero thumbnail -->
+    <div class="grid grid-rows-3 z-10">
+      <!-- thumbnail container -->
+      <div class="grid row-end-4 bg-gray-100 h-60 w-3/5">
+        <div class="pl-56 py-10 space-y-4">
+          <p class="uppercase text-gray-500 text-xs tracking-widest">Start Investing</p>
+          <h1 class="text-5xl font-bold">Title of the Article</h1>
+          <p class="text-sm font-bold">Short description or the abstract of the article</p>
+          <button id="checkProperty" class="flex items-center"><span
+              class="text-green-500 font-bold text-xs pr-2 font-black">Read
+              more</span>
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.1958 1.47145C9.9354 1.2111 9.9354 0.788986 10.1958 0.528636C10.4561 0.268287 10.8782 0.268287 11.1386 0.528636L15.1386 4.52864C15.3989 4.78899 15.3989 5.2111 15.1386 5.47144L11.1386 9.47144C10.8782 9.73179 10.4561 9.73179 10.1958 9.47144C9.9354 9.21109 9.9354 8.78899 10.1958 8.52864L13.0577 5.6667H1.34101C0.968761 5.6667 0.666992 5.36822 0.666992 5.00003C0.666992 4.63184 0.968761 4.33336 1.34101 4.33336H13.0577L10.1958 1.47145Z"
+                fill="#22C680" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- card body -->
+  <div class="px-56 space-y-4 pt-16">
+    <!-- two column cards -->
+    <div class="grid grid-cols-2 gap-2 h-96 space-x-1">
+      <!-- card 1 -->
+      <div class="grid col-start-1 z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-56 w-3/4 py-8 px-6 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-2xl font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-sm font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="grid justify-items-end items-end">
+              <button id="checkProperty" class="z-20 rounded-full bg-green-400 text-white text-md h-5 w-5">
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="grid z-0 shadow-lg" style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;
+      background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-56 w-3/4 py-8 px-6 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-2xl font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-sm font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="grid justify-items-end items-end">
+              <button id="checkProperty" class="z-20 rounded-full bg-green-400 text-white text-md h-5 w-5">
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- three column cards row 1 -->
+    <div class="grid grid-cols-3 gap-2 h-60 space-x-1">
+      <!-- card 1 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- three column cards row 2 -->
+    <div class="grid grid-cols-3 gap-2 h-60 space-x-1">
+      <!-- card 1 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- three column cards row 3 -->
+    <div class="grid grid-cols-3 gap-2 h-60 space-x-1">
+      <!-- card 1 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="grid z-0 shadow-lg"
+        style="background-image: url('assets/images/wind.jpg');background-repeat:no-repeat;background-size:cover;">
+        <div class="grid z-10 justify-items-end items-end">
+          <div class="grid bg-white h-36 w-3/4 py-2 px-4 space-y-2">
+            <p class="uppercase text-gray-500 text-xs tracking-widest">Biology</p>
+            <h1 class="text-lg font-extrabold">The Social Lives of Climate Report</h1>
+            <p class="text-xs font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <span>
+                <button id="checkProperty" class="items-center rounded-full bg-green-400 text-white text-md h-4 w-4">
+                  >
+                </button>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- button -->
+  <div class="grid justify-items-stretch py-10">
+    <button
+      class="bg-green-400 rounded-md text-white text-sm font-bold py-3 px-12 justify-self-center shadow-lg">More</button>
+  </div>
+
+
 
 
   <!-- javascript -->
