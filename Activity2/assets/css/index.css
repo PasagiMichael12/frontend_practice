@@ -1,0 +1,29 @@
+.heading-font {
+   font-family: 'Playfair Display', serif;
+}
+.primary-color {
+   color: #22c680;
+}
+.bg-color {
+   background-color: #22c680;
+}
+.paragraph-font {
+   font-family: 'Poppins', sans-serif;
+}
+.heroImg {
+   width: 100%;
+   height: 900px;
+   background-image: url(../images/picact2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+}
+.cardImg {
+   width: 100%;
+   background-image: url(../images/picact2-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: border-box;
+   position: relative;
+}
