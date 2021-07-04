@@ -3,70 +3,31 @@ body {
    margin: 0;
    padding: 0;
    font-size: 1rem;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Roboto', sans-serif;
    scroll-behavior: smooth;
 }
-.test {
-   background-color: tomato;
-   height: 100%;
+.imgContainer {
+   height: 700px;
+}
+.heroImg {
    width: 100%;
+   height: 900px;
+   background-image: url(../assets/images/JacquelineKelly.jpeg);
+   background-size: cover;
+   position: relative;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   filter: blur(1px);
+   -webkit-filter: blur(1px);
+   filter: brightness(80%);
 }
-/*Header and header image*/
-.gradient {
-   background: rgb(55, 0, 255);
-   background: linear-gradient(
-      90deg,
-      rgba(55, 0, 255, 1) 0%,
-      rgba(251, 172, 0, 1) 100%
-   );
-   padding-top: 10%;
-   height: 100vh;
-   width: 100%;
+.qouteContainer {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
-.picSize {
-   height: 30%;
-   width: 70%;
-}
-.phrase {
-   font-size: 2.25rem;
-}
-/*Header and header image*/
-/*---- Section About Me------*/
-.aboutContainer {
-   height: 85vh;
-   display: flex;
-   align-items: center;
-}
-.picContainer {
-   background: tomato;
-   height: 22rem;
-   width: 22rem;
-   border-radius: 11rem;
-   padding: 15px;
-}
-.aboutPicture {
-   height: 20rem;
-   width: 20rem;
-   border-radius: 10rem;
-}
-/*---- Section About Me------*/
-/*---- Section Skills------*/
-.skillContainerLayout {
-   background-color: #5000ca;
-   padding-top: 50%;
-   height: 85vh;
-   width: 100%;
-   display: flex;
-   align-items: center;
-}
-.skillPicture {
-   height: 30vh;
-}
-/*---- Section Skills------*/
-/*-----Contacts Container----**/
-.contactsContainer {
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.imgCon {
+   position: relative;
+   background-color: #d4afa4;
 }
